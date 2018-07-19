@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="842px" height="97px" viewBox="0 0 842 97" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>C0FE315C-A50D-4C58-874D-71344A99F638</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <text id="text-1" font-family="IBMPlexSans-Bold, IBM Plex Sans" font-size="48" font-weight="bold" line-spacing="54" fill="#FFFFFF">
+            <tspan x="0" y="49">JOIN US AS WE BUILD A BETTER</tspan>
+            <tspan x="0" y="103">MAKER SPACE ON THE BLOCKCHAIN</tspan>
+        </text>
+        <filter x="-0.8%" y="-4.6%" width="101.7%" height="113.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="MAKERS-ARK" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="1">
+        <g id="MAKERS-ARK_DESKTOP" transform="translate(-117.000000, -404.000000)" fill="#FFFFFF">
+            <g id="HEADER" transform="translate(-120.000000, 22.000000)">
+                <g id="Claim" transform="translate(240.000000, 373.000000)">
+                    <g id="MAKERS-ARK-INDUSTRIES.">
+                        <use filter="url(#filter-2)" xlink:href="#text-1"></use>
+                        <use xlink:href="#text-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
