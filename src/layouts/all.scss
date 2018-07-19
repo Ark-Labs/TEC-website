@@ -1,4 +1,4 @@
-@import "~bulma";
+@import '~bulma';
 
 html {
   font-size: 100%;
@@ -22,4 +22,14 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+.container {
+  @include mobile {
+    margin: auto 15px;
+  }
+
+  @include tablet-only {
+    margin: auto 30px;
+  }
 }

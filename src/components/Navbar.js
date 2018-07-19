@@ -24,6 +24,9 @@ const NavbarLink = styled(Link)`
   text-decoration: none;
   padding: 24px;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  text-align: center;
 
   &:hover {
     color: #f7a825;
