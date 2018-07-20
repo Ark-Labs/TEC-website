@@ -1,11 +1,13 @@
 import React from 'react'
 import Navbar from 'components/Navbar'
 import JoinUsSection from 'components/JoinUsSection'
+import RepairingEconomy from 'components/RepairingEconomy'
 
 export const HomepageTemplate = props => (
   <div>
     <Navbar {...props} />
     <JoinUsSection {...props} />
+    <RepairingEconomy {...props} />
   </div>
 )
 
@@ -26,6 +28,11 @@ export const HomepageQuery = graphql`
         joinUsTitle
         joinUsButtonText
         joinUsButtonURL
+        repairingEconomyBackground
+        repairingEconomyTitle
+        repairingEconomyBody
+        repairingEconomyButtonText
+        repairingEconomyButtonURL
       }
     }
   }

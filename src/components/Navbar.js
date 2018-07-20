@@ -8,6 +8,7 @@ const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
 `
 
 const Logo = styled.img`

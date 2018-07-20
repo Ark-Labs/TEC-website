@@ -19,3 +19,8 @@ collections:
           - {label: "Join Us Title", name: "joinUsTitle", widget: "string"}
           - {label: "Join Us Button Text", name: "joinUsButtonText", widget: "string"}
           - {label: "Join Us Button URL", name: "joinUsButtonURL", widget: "string"}
+          - {label: "Repairing Economy Background", name: repairingEconomyBackground, widget: "image"}
+          - {label: "Repairing Economy Title", name: "repairingEconomyTitle", widget: "string"}
+          - {label: "Repairing Economy Body", name: "repairingEconomyBody", widget: "text"}
+          - {label: "Repairing Economy Button Text", name: "repairingEconomyButtonText", widget: "string"}
+          - {label: "Repairing Economy Button URL", name: "repairingEconomyButtonURL", widget: "string"}

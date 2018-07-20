@@ -1,11 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Ribbon, Content } from 'helpers'
+import { RibbonContainer, Ribbon, Content, Button } from 'helpers'
 import { Container } from 'bloomer'
 
 const Wrapper = styled.section`
+  position: relative;
   background-image: url(${props => props.backgroundImage});
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 `
 
@@ -50,16 +51,7 @@ const Underline = styled.div`
   }
 `
 
-const Button = styled.a`
-  display: inline-block;
-  color: black;
-  font-size: 18px;
-  font-weight: 500;
-  text-align: center;
-  background: #d6e600;
-  border-radius: 28px;
-  text-transform: uppercase;
-  padding: 10px 50px;
+const StyledButton = Button.extend`
   @media (max-width: 768px) {
     position: absolute;
     bottom: -76px;
@@ -69,22 +61,20 @@ const Button = styled.a`
   }
 `
 
-const JoinUsSection = ({
-  logo,
-  joinUsTitle,
-  joinUsButtonText,
-  joinUsButtonURL,
-  joinUsBackground
-}) => (
-  <Wrapper backgroundImage={joinUsBackground}>
+const JoinUsSection = props => (
+  <Wrapper backgroundImage={props.joinUsBackground}>
+    <RibbonContainer>
+      <Ribbon color="#e52839" right="60%" bottom />
+      <Ribbon color="#f7a825" left="80%" top />
+    </RibbonContainer>
     <PaddedContainer>
-      <Ribbon color="#e52839" right="90%" />
-      <Ribbon color="#f7a825" left="95%" />
       <Content>
-        <Logo src={logo} />
-        <Title>{joinUsTitle}</Title>
+        <Logo src={props.logo} />
+        <Title>{props.joinUsTitle}</Title>
         <Underline />
-        <Button href={joinUsButtonURL}>{joinUsButtonText}</Button>
+        <StyledButton href={props.joinUsButtonURL}>
+          {props.joinUsButtonText}
+        </StyledButton>
       </Content>
     </PaddedContainer>
   </Wrapper>
