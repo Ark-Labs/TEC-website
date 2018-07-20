@@ -55,6 +55,7 @@ const Title = styled.h4`
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
+  margin-bottom: 10px;
 
   @media (max-width: 768px) {
     font-size: 24px;
@@ -65,7 +66,8 @@ const Underline = styled.div`
   width: ${props => props.width || '100px'};
   height: 8px;
   border-radius: 15px;
+  margin-bottom: 20px;
   background-color: ${props => props.color || '#e52839'};
 `
 
-export { RibbonContainer, Overflow, Ribbon, Content, Button, Title, Underline }
+export { RibbonContainer, Ribbon, Content, Button, Title, Underline }

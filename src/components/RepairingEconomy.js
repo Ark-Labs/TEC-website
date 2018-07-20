@@ -12,9 +12,6 @@ import { Container } from 'bloomer'
 
 const Wrapper = styled.section`
   position: relative;
-  background-image: url(${props => props.backgroundImage});
-  background-size: contain;
-  background-position: center;
 `
 
 const PaddedContainer = styled(Container)`
@@ -27,7 +24,7 @@ const PaddedContainer = styled(Container)`
 const StyledButton = Button.extend`
   display: block;
   max-width: 450px;
-  margin: 0 auto;
+  margin: 60px auto 0;
 `
 
 const StyledRibbon = styled(Ribbon)`
@@ -36,20 +33,27 @@ const StyledRibbon = styled(Ribbon)`
   }
 `
 
+const ContentWithBackground = Content.extend`
+  background-image: url(${props => props.backgroundImage});
+  background-size: contain;
+  background-position: center right;
+  background-repeat: no-repeat;
+`
+
 const RepairingEconomySection = props => (
-  <Wrapper backgroundImage={props.repairingEconomyBackground}>
+  <Wrapper>
     <RibbonContainer>
       <StyledRibbon color="#e52839" right="calc(60% - 600px)" top />
     </RibbonContainer>
     <PaddedContainer>
-      <Content>
+      <ContentWithBackground backgroundImage={props.repairingEconomyBackground}>
         <Title>{props.repairingEconomyTitle}</Title>
         <Underline />
         <p>{props.repairingEconomyBody}</p>
         <StyledButton href={props.repairingEconomyButtonURL}>
           {props.repairingEconomyButtonText}
         </StyledButton>
-      </Content>
+      </ContentWithBackground>
     </PaddedContainer>
   </Wrapper>
 )
