@@ -3,6 +3,7 @@ import Navbar from 'components/Navbar'
 import JoinUsSection from 'components/JoinUsSection'
 import EconomySection from 'components/EconomySection'
 import FAQSection from 'components/FAQSection'
+import ProductSection from 'components/ProductSection'
 
 export const HomepageTemplate = props => (
   <div>
@@ -10,6 +11,7 @@ export const HomepageTemplate = props => (
     <JoinUsSection {...props} />
     <EconomySection {...props} />
     <FAQSection {...props} />
+    <ProductSection {...props} />
   </div>
 )
 
@@ -45,6 +47,15 @@ export const HomepageQuery = graphql`
         faqQuestions {
           question
           answer
+        }
+        productTitle
+        productLogo
+        productSubtitle
+        productBody
+        productPanels {
+          image
+          text
+          url
         }
       }
     }

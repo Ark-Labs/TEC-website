@@ -46,3 +46,15 @@ strong {
     margin: auto 30px;
   }
 }
+
+// Bulma overrides
+.columns {
+  margin-left: -2.5rem;
+  margin-right: -2.5rem;
+  margin-top: 2.5rem;
+}
+
+.column {
+  padding: 1rem 2.5rem;
+  position: relative;
+}

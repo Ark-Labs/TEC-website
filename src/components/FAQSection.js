@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { Component } from 'react'
 import styled from 'styled-components'
 import { Ribbon, Content, Title, Button } from 'helpers'
-import { Container, Columns, Column } from 'bloomer'
+import { Container } from 'bloomer'
+import FAQQuestion from './FAQQuestion'
 
 const Wrapper = styled.section`
   position: relative;
@@ -21,27 +22,31 @@ const ContentWithBackground = Content.extend`
   background-repeat: no-repeat;
 `
 
-const QuestionWrapper = styled.div`
-  margin-left: 40px;
-  margin-bottom: 20px;
-  &:before {
+class FAQSection extends Component {
+  constructor() {
+    super()
+    this.state = { activeQuestion: 0 }
   }
-`
 
-const FAQSection = props => (
-  <Wrapper>
-    <PaddedContainer>
-      <ContentWithBackground backgroundImage={props.faqBackground}>
-        <Title>{props.faqTitle}</Title>
-        {props.faqQuestions.map(({ question, answer }) => (
-          <QuestionWrapper key={question}>
-            <strong>{question}</strong>
-            <p>{answer}</p>
-          </QuestionWrapper>
-        ))}
-      </ContentWithBackground>
-    </PaddedContainer>
-  </Wrapper>
-)
+  render() {
+    return (
+      <Wrapper>
+        <PaddedContainer>
+          <ContentWithBackground backgroundImage={this.props.faqBackground}>
+            <Title>{this.props.faqTitle}</Title>
+            {this.props.faqQuestions.map((question, index) => (
+              <FAQQuestion
+                {...question}
+                key={index}
+                active={this.state.activeQuestion === index}
+                onClick={() => this.setState({ activeQuestion: index })}
+              />
+            ))}
+          </ContentWithBackground>
+        </PaddedContainer>
+      </Wrapper>
+    )
+  }
+}
 
 export default FAQSection

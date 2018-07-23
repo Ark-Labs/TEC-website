@@ -7,7 +7,6 @@ const HomepagePreview = ({ entry, widgetFor }) => {
   const iframe = document.querySelector('.nc-previewPane-frame')
   const iframeHeadElem = iframe.contentDocument.head
 
-  console.log(entry.toJSON())
   return (
     <StyleSheetManager target={iframeHeadElem}>
       <HomepageTemplate {...entry.toJSON().data} />

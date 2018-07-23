@@ -45,5 +45,22 @@ faqQuestions:
       Payments can be made in ethereum, lisk, shift, ark or bitcoin via our backoffice.
       Redeem will be available at TEC Sale end from backoffice through button 'Redeem'.
       See: guide to ethereum contribution
-
+productTitle: The Nations Leading Marketplace
+productLogo: /img/the-shop.svg
+productSubtitle: Accepted In Brick & Mortar Maker Spaces
+productBody: >-
+  Makers Ark is partnered with TheShop.Build Maker Spaces located in San Francisco and San Jose.
+  Each location will accept Makers Ark as well as Bitcoin, Ethereum, Litecoin, and Ark.
+  From State of the Art Laser Cutters to 3D Printers TheShop.Build offers inventors and entrepreneurs endless opportunities with their products.
+  For those who are new to Maker Spaces, The Shop.Build offers a revolutionary training system that is changing the traditional system for students, educators, and makers alike.
+productPanels:
+  - image: /img/company-1.png
+    text: 'dream...'
+    url: '#test'
+  - image: /img/company-2.png
+    text: 'learn...'
+    url: '#test'
+  - image: /img/company-3.png
+    text: 'build...'
+    url: '#test'
 ---

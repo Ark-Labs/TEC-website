@@ -49,6 +49,7 @@ const Button = styled.a`
   border-radius: 28px;
   text-transform: uppercase;
   padding: 10px 50px;
+  ${props => props.orange && 'color: white !important; background: #f7a825;'};
 `
 
 const Title = styled.h4`
