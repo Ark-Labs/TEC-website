@@ -14,12 +14,12 @@ collections:
         name: "homepage"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "homepage"}
-          - {label: "Logo", name: logo, widget: "image"}
-          - {label: "Join Us Background", name: joinUsBackground, widget: "image"}
+          - {label: "Logo", name: "logo", widget: "image"}
+          - {label: "Join Us Background", name: "joinUsBackground", widget: "image"}
           - {label: "Join Us Title", name: "joinUsTitle", widget: "string"}
           - {label: "Join Us Button Text", name: "joinUsButtonText", widget: "string"}
           - {label: "Join Us Button URL", name: "joinUsButtonURL", widget: "string"}
-          - {label: "Economy Background", name: economyBackground, widget: "image"}
+          - {label: "Economy Background", name: "economyBackground", widget: "image"}
           - {label: "Economy Title", name: "economyTitle", widget: "string"}
           - {label: "Economy Upper Text", name: "economyUpperText", widget: "text"}
           - label: "Economy Columns"
@@ -31,11 +31,22 @@ collections:
           - {label: "Economy Lower Text", name: "economyLowerText", widget: "text"}
           - {label: "Economy Button Text", name: "economyButtonText", widget: "string"}
           - {label: "Economy Button URL", name: "economyButtonURL", widget: "string"}
-          - {label: "FAQ Background", name: faqBackground, widget: "image"}
-          - {label: "FAQ Title", name: faqTitle, widget: "string"}
+          - {label: "FAQ Background", name: "faqBackground", widget: "image"}
+          - {label: "FAQ Title", name: "faqTitle", widget: "string"}
           - label: "FAQ Questions"
             name: "faqQuestions"
             widget: "list"
             fields:
               - {label: "Question", name: "question", widget: "string"}
               - {label: "Answer", name: "answer", widget: "text"}
+          - {label: "Product Title", name: "productTitle", widget: "string"}
+          - {label: "Product SubTitle", name: "productSubTitle", widget: "string"}
+          - {label: "Product Logo", name: "productLogo", widget: "image"}
+          - {label: "Product Body", name: "productBody", widget: "text"}
+          - label: "Product Panels"
+            name: "productPanels"
+            widget: "list"
+            fields:
+              - {label: "Image", name: "image", widget: "image"}
+              - {label: "Text", name: "text", widget: "string"}
+              - {label: "URL", name: "url", widget: "string"}
