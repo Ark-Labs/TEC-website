@@ -30,7 +30,12 @@ export const HomepageQuery = graphql`
         joinUsButtonURL
         repairingEconomyBackground
         repairingEconomyTitle
-        repairingEconomyBody
+        repairingEconomyUpperText
+        repairingEconomyColumns {
+          title
+          body
+        }
+        repairingEconomyLowerText
         repairingEconomyButtonText
         repairingEconomyButtonURL
       }
