@@ -22,8 +22,8 @@ collections:
           - {label: "Economy Background", name: economyBackground, widget: "image"}
           - {label: "Economy Title", name: "economyTitle", widget: "string"}
           - {label: "Economy Upper Text", name: "economyUpperText", widget: "text"}
-          - label: "Economy Columns",
-            name: "economyColumns",
+          - label: "Economy Columns"
+            name: "economyColumns"
             widget: "list"
             fields:
               - {label: "Title", name: "title", widget: "string"}
@@ -33,8 +33,8 @@ collections:
           - {label: "Economy Button URL", name: "economyButtonURL", widget: "string"}
           - {label: "FAQ Background", name: faqBackground, widget: "image"}
           - {label: "FAQ Title", name: faqTitle, widget: "string"}
-          - label: "FAQ Questions",
-            name: "faqQuestions",
+          - label: "FAQ Questions"
+            name: "faqQuestions"
             widget: "list"
             fields:
               - {label: "Question", name: "question", widget: "string"}
