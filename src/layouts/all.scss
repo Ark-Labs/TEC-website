@@ -32,6 +32,11 @@ body {
   box-sizing: border-box;
 }
 
+strong {
+  color: white;
+  font-weight: 600;
+}
+
 .container {
   @include mobile {
     margin: auto 15px;

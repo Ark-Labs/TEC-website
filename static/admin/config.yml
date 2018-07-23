@@ -19,15 +19,23 @@ collections:
           - {label: "Join Us Title", name: "joinUsTitle", widget: "string"}
           - {label: "Join Us Button Text", name: "joinUsButtonText", widget: "string"}
           - {label: "Join Us Button URL", name: "joinUsButtonURL", widget: "string"}
-          - {label: "Repairing Economy Background", name: repairingEconomyBackground, widget: "image"}
-          - {label: "Repairing Economy Title", name: "repairingEconomyTitle", widget: "string"}
-          - {label: "Repairing Economy Upper Text", name: "repairingEconomyUpperText", widget: "text"}
-          - label: "Repairing Economy Columns",
-            name: "repairingEconomyColumns",
+          - {label: "Economy Background", name: economyBackground, widget: "image"}
+          - {label: "Economy Title", name: "economyTitle", widget: "string"}
+          - {label: "Economy Upper Text", name: "economyUpperText", widget: "text"}
+          - label: "Economy Columns",
+            name: "economyColumns",
             widget: "list"
             fields:
               - {label: "Title", name: "title", widget: "string"}
               - {label: "Body", name: "body", widget: "text"}
-          - {label: "Repairing Economy Lower Text", name: "repairingEconomyLowerText", widget: "text"}
-          - {label: "Repairing Economy Button Text", name: "repairingEconomyButtonText", widget: "string"}
-          - {label: "Repairing Economy Button URL", name: "repairingEconomyButtonURL", widget: "string"}
+          - {label: "Economy Lower Text", name: "economyLowerText", widget: "text"}
+          - {label: "Economy Button Text", name: "economyButtonText", widget: "string"}
+          - {label: "Economy Button URL", name: "economyButtonURL", widget: "string"}
+          - {label: "FAQ Background", name: faqBackground, widget: "image"}
+          - {label: "FAQ Title", name: faqTitle, widget: "string"}
+          - label: "FAQ Questions",
+            name: "faqQuestions",
+            widget: "list"
+            fields:
+              - {label: "Question", name: "question", widget: "string"}
+              - {label: "Answer", name: "answer", widget: "text"}

@@ -1,13 +1,15 @@
 import React from 'react'
 import Navbar from 'components/Navbar'
 import JoinUsSection from 'components/JoinUsSection'
-import RepairingEconomy from 'components/RepairingEconomy'
+import EconomySection from 'components/EconomySection'
+import FAQSection from 'components/FAQSection'
 
 export const HomepageTemplate = props => (
   <div>
     <Navbar {...props} />
     <JoinUsSection {...props} />
-    <RepairingEconomy {...props} />
+    <EconomySection {...props} />
+    <FAQSection {...props} />
   </div>
 )
 
@@ -28,16 +30,22 @@ export const HomepageQuery = graphql`
         joinUsTitle
         joinUsButtonText
         joinUsButtonURL
-        repairingEconomyBackground
-        repairingEconomyTitle
-        repairingEconomyUpperText
-        repairingEconomyColumns {
+        economyBackground
+        economyTitle
+        economyUpperText
+        economyColumns {
           title
           body
         }
-        repairingEconomyLowerText
-        repairingEconomyButtonText
-        repairingEconomyButtonURL
+        economyLowerText
+        economyButtonText
+        economyButtonURL
+        faqBackground
+        faqTitle
+        faqQuestions {
+          question
+          answer
+        }
       }
     }
   }

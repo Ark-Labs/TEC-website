@@ -38,34 +38,30 @@ const PaddedColumns = styled(Columns)`
   margin-bottom: 20px !important;
 `
 
-const ColumnText = styled.p`
-  font-weight: 600;
-`
-
-const RepairingEconomySection = props => (
+const EconomySection = props => (
   <Wrapper id="about">
     <RibbonContainer>
       <StyledRibbon color="#e52839" right="calc(60% - 600px)" top />
     </RibbonContainer>
     <PaddedContainer>
-      <ContentWithBackground backgroundImage={props.repairingEconomyBackground}>
-        <Title>{props.repairingEconomyTitle}</Title>
-        <p>{props.repairingEconomyUpperText}</p>
+      <ContentWithBackground backgroundImage={props.economyBackground}>
+        <Title>{props.economyTitle}</Title>
+        <p>{props.economyUpperText}</p>
         <PaddedColumns>
-          {props.repairingEconomyColumns.map(({ body, title }) => (
+          {props.economyColumns.map(({ body, title }) => (
             <Column key={title}>
               <Title color="#f7a825">{title}</Title>
-              <ColumnText>{body}</ColumnText>
+              <strong>{body}</strong>
             </Column>
           ))}
         </PaddedColumns>
-        <p>{props.repairingEconomyLowerText}</p>
-        <StyledButton href={props.repairingEconomyButtonURL}>
-          {props.repairingEconomyButtonText}
+        <p>{props.economyLowerText}</p>
+        <StyledButton href={props.economyButtonURL}>
+          {props.economyButtonText}
         </StyledButton>
       </ContentWithBackground>
     </PaddedContainer>
   </Wrapper>
 )
 
-export default RepairingEconomySection
+export default EconomySection

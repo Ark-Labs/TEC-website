@@ -70,7 +70,7 @@ const Title = styled.h4`
     width: ${props => props.underlineWidth || '100px'};
     height: 8px;
     border-radius: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     background-color: ${props => props.underlineColor || '#e52839'};
   }
 `
