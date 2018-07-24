@@ -88,4 +88,20 @@ companyPanels:
   - progress: 100
     title: Great Team Collaboration
     text: There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope. It’s exciting to think about setting.
+dposTitle: The Makers Ark Blockchain DPoS
+dposBody: >-
+  The Maker’s Ark fork from the Ark blockchain and may be added to any Ark desktop wallet using the MAKE network hash ID and the instructions at blog.ark.io. A TheShop.Build branded Ark compatible wallet is also available for download at TheShop.Build for desktop and mobile devices.
+
+  Makers Ark is a Delegated Proof of Stake, DPoS, blockchain, in which 51 active delegates are voted on by token holders to secure and maintain the network. As such, the MAKE network is ultimately owned and controlled by the users through their voting for the delegates.
+  There is an inflation rate determined by a constant 2 MAKE tokens per block forged by the delegate creating the block, with a new block created every 8 seconds, resulting in an initial inflation of 6.31% for the first year, 5.93% for the second year the percentage of which decreases with each subsequent year with the constant creation rate of new MAKE ending with 4.02% in the 10th year. DPoS has proven to be a fast, reliable, and efficient blockchain technology requiring far less energy and computing resources than other consensus methods…
+
+  The Ark based wallets are very secure and easier to use than most other blockchain wallets, and do not require the download and installation of the entire blockchain. A hardware USB device, the Ledger Nano, is available from either the Ark store, TheShop.Build, at Ark.io or Ledger.io to further secure the desktop wallet from hacks and keystroke loggers, and is highly recommended for MAKE and any other significant crypto holdings of supported tokens, including Ark and Ark based tokens. Unlike other Ledger wallets, the Ark based wallets are
+  standalone, not requiring Chrome browser extensions or use in any browser.
+
+  The Makers Ark token is a utility token that allows access to technology based products and technology based services of TheShop.Build and does not represent any equity share in TheShop.Build Inc., and there is no guarantee of any value other than in exchange for offerings by TheShop.Build at an exchange rate to be
+  determined by TheShop.Build which will likely vary according to prevailing market conditions.
+  There is also no guarantee that Makers Ark tokens will be listed on an exchange since that is up to the individual exchanges, and not under the control or determined by the Makers Ark team, Inc.
+dposImage: /img/blockchain.png
+dposButtonUrl: '#dpos'
+dposButtonText: Ark Blockchain DPoS
 ---

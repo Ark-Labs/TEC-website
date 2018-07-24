@@ -4,10 +4,12 @@ backend:
 
 media_folder: static/img
 public_folder: /img
+publish_mode: editorial_workflow
 
 collections:
   - name: "pages"
     label: "Pages"
+    delete: false
     files:
       - file: "src/pages/index.md"
         label: "Homepage"
@@ -59,3 +61,18 @@ collections:
               - {label: "Image", name: "image", widget: "image"}
               - {label: "Title", name: "title", widget: "string"}
               - {label: "Text", name: "text", widget: "string"}
+          - {label: "Company Title", name: "companyTitle", widget: "string"}
+          - {label: "Company Body", name: "companyBody", widget: "text"}
+          - {label: "Company Logo", name: "companyLogo", widget: "image"}
+          - label: "Company Panels"
+            name: "companyPanels"
+            widget: "list"
+            fields:
+              - {label: "Progress", name: "progress", widget: "number"}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Text", name: "text", widget: "text"}
+          - {label: "DPoS Title", name: "dposTitle", widget: "string"}
+          - {label: "DPoS Body", name: "dposBody", widget: "markdown"}
+          - {label: "DPoS Image", name: "dposImage", widget: "image"}
+          - {label: "DPoS Button Text", name: "dposButtonText", widget: "string"}
+          - {label: "DPoS Button URL", name: "dposButtonURL", widget: "string"}
