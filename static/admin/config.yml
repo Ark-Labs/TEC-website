@@ -42,7 +42,7 @@ collections:
               - {label: "Question", name: "question", widget: "string"}
               - {label: "Answer", name: "answer", widget: "text"}
           - {label: "Product Title", name: "productTitle", widget: "string"}
-          - {label: "Product SubTitle", name: "productSubTitle", widget: "string"}
+          - {label: "Product Secondary Title", name: "productSubtitle", widget: "string"}
           - {label: "Product Logo", name: "productLogo", widget: "image"}
           - {label: "Product Body", name: "productBody", widget: "text"}
           - label: "Product Panels"

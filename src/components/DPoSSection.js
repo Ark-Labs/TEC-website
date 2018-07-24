@@ -45,7 +45,7 @@ const ProductSection = props => (
           </Column>
           <CenteredColumn>
             <Image src={props.dposImage} />
-            <Button href={props.dposButtonUrl}>{props.dposButtonText}</Button>
+            <Button href={props.dposButtonURL}>{props.dposButtonText}</Button>
           </CenteredColumn>
         </Columns>
       </Content>

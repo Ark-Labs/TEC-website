@@ -102,6 +102,6 @@ dposBody: >-
   determined by TheShop.Build which will likely vary according to prevailing market conditions.
   There is also no guarantee that Makers Ark tokens will be listed on an exchange since that is up to the individual exchanges, and not under the control or determined by the Makers Ark team, Inc.
 dposImage: /img/blockchain.png
-dposButtonUrl: '#dpos'
+dposButtonURL: '#dpos'
 dposButtonText: Ark Blockchain DPoS
 ---
