@@ -50,3 +50,12 @@ collections:
               - {label: "Image", name: "image", widget: "image"}
               - {label: "Text", name: "text", widget: "string"}
               - {label: "URL", name: "url", widget: "string"}
+              - {label: "Product Body", name: "productBody", widget: "text"}
+          - {label: "Perks Title", name: "perksTitle", widget: "string"}
+          - label: "Perks Columns"
+            name: "perksColumns"
+            widget: "list"
+            fields:
+              - {label: "Image", name: "image", widget: "image"}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Text", name: "text", widget: "string"}

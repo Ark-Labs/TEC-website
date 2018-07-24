@@ -63,4 +63,15 @@ productPanels:
   - image: /img/company-3.png
     text: 'build...'
     url: '#test'
+perksTitle: What to find in the Shop.build Maker Space
+perksColumns:
+  - image: /img/group.svg
+    title: 'MEMBERSHIPS & DAY PASSES'
+    text: 'Whether a Makers Ark holder would like to spend a day or a lifetime at a Maker Space, TheShop.Build offers a variety of Day, Month, Annual, and Lifetime passes.'
+  - image: /img/group-2.svg
+    title: 'PROFESSIONAL CLIENT DEVELOPMENT'
+    text: 'Members can create a prototype of their invention or recreate a blueprint of a design with a Shop.Build team member'
+  - image: /img/group-3.svg
+    title: 'OFFICE SPACE RENTAL'
+    text: 'Members may also utilize their token to rent out offices for their start up. With high speed internet, coffee, and access to the greatest network of inventors in California the Makerspace becomes the ultimate coshare office.'
 ---

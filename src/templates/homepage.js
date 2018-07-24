@@ -4,6 +4,7 @@ import JoinUsSection from 'components/JoinUsSection'
 import EconomySection from 'components/EconomySection'
 import FAQSection from 'components/FAQSection'
 import ProductSection from 'components/ProductSection'
+import PerksSection from 'components/PerksSection'
 
 export const HomepageTemplate = props => (
   <div>
@@ -12,6 +13,7 @@ export const HomepageTemplate = props => (
     <EconomySection {...props} />
     <FAQSection {...props} />
     <ProductSection {...props} />
+    <PerksSection {...props} />
   </div>
 )
 
@@ -56,6 +58,12 @@ export const HomepageQuery = graphql`
           image
           text
           url
+        }
+        perksTitle
+        perksColumns {
+          image
+          title
+          text
         }
       }
     }

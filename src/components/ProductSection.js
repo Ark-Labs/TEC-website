@@ -78,7 +78,7 @@ const ProductSection = props => (
     <PaddedContainer>
       <Content>
         <Title>{props.productTitle}</Title>
-        <Columns isGapless={false}>
+        <Columns>
           <Column>
             <Logo src={props.productLogo} />
             <SubTitle>{props.productSubtitle}</SubTitle>
