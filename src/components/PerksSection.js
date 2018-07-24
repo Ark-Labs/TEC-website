@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { RibbonContainer, Ribbon, Content, Title, Button } from 'helpers'
-import { Container, Columns, Column } from 'bloomer'
+import { Content, Title } from 'helpers'
+import { Container, Columns } from 'bloomer'
 import Perk from './Perk'
 
 const Wrapper = styled.section`

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import { Ribbon, Content, Title, Button } from 'helpers'
+import { Content, Title } from 'helpers'
 import { Container } from 'bloomer'
 import FAQQuestion from './FAQQuestion'
 
@@ -9,10 +9,7 @@ const Wrapper = styled.section`
 `
 
 const PaddedContainer = styled(Container)`
-  padding: 60px 0;
-  @media (max-width: 768px) {
-    padding: 60px 0 28px;
-  }
+  padding: 60px 0 120px;
 `
 
 const ContentWithBackground = Content.extend`

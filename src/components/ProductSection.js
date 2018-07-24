@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { RibbonContainer, Ribbon, Content, Title, Button } from 'helpers'
+import { Ribbon, Content, Title, Button } from 'helpers'
 import { Container, Columns, Column } from 'bloomer'
 
 const Wrapper = styled.section`
@@ -74,8 +74,8 @@ const PanelText = styled.div`
 `
 const ProductSection = props => (
   <Wrapper>
-    <Ribbon color="#388d6c" left="-50%" top />
     <PaddedContainer>
+      <Ribbon color="#388d6c" left="-40%" top />
       <Content>
         <Title>{props.productTitle}</Title>
         <Columns>

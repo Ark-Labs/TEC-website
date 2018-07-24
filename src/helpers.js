@@ -31,7 +31,7 @@ const Ribbon = styled.div`
   ${props => (props.left ? `left: ${props.left}` : `right: ${props.right}`)};
   height: 200%;
   width: 600px;
-  transform: skewX(55deg);
+  transform: skewX(${props => (props.inverse ? '-55deg' : '55deg')});
 `
 
 const Content = styled.div`
@@ -73,16 +73,6 @@ const Title = styled.h4`
     border-radius: 15px;
     margin-bottom: 25px;
     background-color: ${props => props.underlineColor || '#e52839'};
-  }
-`
-
-const LightText = styled.p`
-  font-size: 24px;
-  line-height: 1.29;
-
-  @media (max-width: 768px) {
-    font-size: 14px;
-    line-height: 1.36;
   }
 `
 

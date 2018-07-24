@@ -74,4 +74,18 @@ perksColumns:
   - image: /img/group-3.svg
     title: 'OFFICE SPACE RENTAL'
     text: 'Members may also utilize their token to rent out offices for their start up. With high speed internet, coffee, and access to the greatest network of inventors in California the Makerspace becomes the ultimate coshare office.'
+companyTitle: Why work with ArkLabs
+companyBody: >-
+  Within its first quarter, the MAKE Token will have one of the largest working platforms associated with a physical retail location in the world with locations in San Francisco ( and others? ) accepting the token as a form of payment for services, education, retail, and workspace.
+companyLogo: /img/ark-labs.svg
+companyPanels:
+  - progress: 10
+    title: Great Team Collaboration
+    text: There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope. It’s exciting to think about setting.
+  - progress: 60
+    title: Great Team Collaboration
+    text: There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope. It’s exciting to think about setting.
+  - progress: 100
+    title: Great Team Collaboration
+    text: There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope. It’s exciting to think about setting.
 ---

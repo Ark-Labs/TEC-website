@@ -4,8 +4,15 @@
   "version": "0.1.0",
   "author": "Untitled Kingdom",
   "dependencies": {
+    "babel-eslint": "^8.2.6",
     "bloomer": "^0.6.3",
     "bulma": "^0.7.1",
+    "eslint": "^5.2.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-import-resolver-webpack": "^0.10.1",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-react": "^7.10.0",
     "gatsby": "^1.9.213",
     "gatsby-link": "^1.6.37",
     "gatsby-plugin-netlify": "^1.0.19",
@@ -25,6 +32,7 @@
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-helmet": "^5.2.0",
+    "react-responsive": "^5.0.0",
     "styled-components": "^3.3.3",
     "uuid": "^3.2.1"
   },

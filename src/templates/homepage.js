@@ -5,6 +5,7 @@ import EconomySection from 'components/EconomySection'
 import FAQSection from 'components/FAQSection'
 import ProductSection from 'components/ProductSection'
 import PerksSection from 'components/PerksSection'
+import CompanySection from 'components/CompanySection'
 
 export const HomepageTemplate = props => (
   <div>
@@ -14,6 +15,7 @@ export const HomepageTemplate = props => (
     <FAQSection {...props} />
     <ProductSection {...props} />
     <PerksSection {...props} />
+    <CompanySection {...props} />
   </div>
 )
 
@@ -25,6 +27,7 @@ const Homepage = ({ data }) => {
 
 export default Homepage
 
+// eslint-disable-next-line
 export const HomepageQuery = graphql`
   query Homepage($id: String!) {
     markdownRemark(id: { eq: $id }) {
@@ -62,6 +65,14 @@ export const HomepageQuery = graphql`
         perksTitle
         perksColumns {
           image
+          title
+          text
+        }
+        companyTitle
+        companyBody
+        companyLogo
+        companyPanels {
+          progress
           title
           text
         }

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { HomepageTemplate } from 'templates/homepage'
 import { StyleSheetManager } from 'styled-components'
 
-const HomepagePreview = ({ entry, widgetFor }) => {
+const HomepagePreview = ({ entry }) => {
   const iframe = document.querySelector('.nc-previewPane-frame')
   const iframeHeadElem = iframe.contentDocument.head
 
