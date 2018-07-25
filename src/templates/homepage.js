@@ -81,7 +81,7 @@ export const HomepageQuery = graphql`
         dposTitle
         dposBody
         dposImage
-        dposButtonUrl
+        dposButtonURL
         dposButtonText
       }
     }
