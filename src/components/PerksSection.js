@@ -21,7 +21,7 @@ const PaddedColumns = styled(Columns)`
   position: relative;
 `
 
-const ProductSection = props => (
+const PerksSection = props => (
   <Wrapper>
     <PaddedContainer>
       <Content>
@@ -35,4 +35,4 @@ const ProductSection = props => (
   </Wrapper>
 )
 
-export default ProductSection
+export default PerksSection

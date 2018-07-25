@@ -32,6 +32,7 @@ const SubTitle = styled.h5`
 
 const Body = styled.div`
   margin-bottom: 36px;
+  white-space: pre-line;
 `
 
 const Panels = styled(Columns)`

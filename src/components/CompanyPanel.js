@@ -19,7 +19,7 @@ const Title = styled.div`
   margin: 10px auto;
 `
 
-const HR = styled.div`
+const Divider = styled.div`
   width: 100%;
   height: 6px;
   background: #f7a825;
@@ -34,18 +34,22 @@ const Text = styled.p`
 const CompanyPanel = ({ progress, title, text }) => (
   <Column>
     <Wrapper>
-      <MediaQuery query="(max-width: 768px)">
-        <Gauge value={progress} size={250} />
-      </MediaQuery>
-      <MediaQuery query="(min-width: 769px) and (max-width: 1023px)">
-        <Gauge value={progress} size={150} fontSize="16px" />
-      </MediaQuery>
-      <MediaQuery query="(min-width: 1024px)">
-        <Gauge value={progress} />
-      </MediaQuery>
-      <HR />
-      <Title>{title}</Title>
-      <Text>{text}</Text>
+      <div>
+        <MediaQuery query="(max-width: 768px)">
+          <Gauge value={progress} size={250} />
+        </MediaQuery>
+        <MediaQuery query="(min-width: 769px) and (max-width: 1023px)">
+          <Gauge value={progress} size={150} fontSize="16px" />
+        </MediaQuery>
+        <MediaQuery query="(min-width: 1024px)">
+          <Gauge value={progress} />
+        </MediaQuery>
+      </div>
+      <Divider />
+      <div>
+        <Title>{title}</Title>
+        <Text>{text}</Text>
+      </div>
     </Wrapper>
   </Column>
 )
