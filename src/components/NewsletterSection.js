@@ -40,7 +40,13 @@ const NewsletterSection = props => (
   <Wrapper backgroundImage={props.newsletterBackground}>
     <Container>
       <Content>
-        <form name="newsletter" method="POST" data-netlify="true">
+        <form
+          name="newsletter"
+          method="post"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+        >
+          <input type="hidden" name="form-name" value="newsletter" />
           <PaddedColumns isVCentered>
             <Column isSize="1/3">
               <Title color="black" noUnderline>
