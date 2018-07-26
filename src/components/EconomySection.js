@@ -32,27 +32,32 @@ const PaddedColumns = styled(Columns)`
   margin-bottom: 20px !important;
 `
 
-const EconomySection = props => (
+const EconomySection = ({
+  title,
+  backgroundImage,
+  upperText,
+  columns,
+  lowerText,
+  button
+}) => (
   <Wrapper id="about">
     <RibbonContainer>
       <Ribbon color="#e52839" right="60%" top />
     </RibbonContainer>
     <PaddedContainer>
-      <ContentWithBackground backgroundImage={props.economyBackground}>
-        <Title>{props.economyTitle}</Title>
-        <p>{props.economyUpperText}</p>
+      <ContentWithBackground backgroundImage={backgroundImage}>
+        <Title>{title}</Title>
+        <p>{upperText}</p>
         <PaddedColumns>
-          {props.economyColumns.map(({ body, title }) => (
+          {columns.map(({ body, title }) => (
             <Column key={title}>
               <Title color="#f7a825">{title}</Title>
               <strong>{body}</strong>
             </Column>
           ))}
         </PaddedColumns>
-        <p>{props.economyLowerText}</p>
-        <StyledButton href={props.economyButtonURL}>
-          {props.economyButtonText}
-        </StyledButton>
+        <p>{lowerText}</p>
+        <StyledButton {...button} />
       </ContentWithBackground>
     </PaddedContainer>
   </Wrapper>

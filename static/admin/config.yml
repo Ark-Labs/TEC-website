@@ -6,6 +6,31 @@ media_folder: static/img
 public_folder: /img
 publish_mode: editorial_workflow
 
+title: &title
+  label: "Title"
+  name: "title"
+  widget: "string"
+
+body: &body
+  label: "Body"
+  name: "body"
+  widget: "markdown"
+
+backgroundImage: &backgroundImage
+  label: "Background Image"
+  name: "backgroundImage"
+  widget: "image"
+
+button: &button
+  label: "Button"
+  name: "button"
+  widget: "object"
+  fields:
+    - {label: "Text", name: "children", widget: "string"}
+    - {label: "URL", name: "href", widget: "string"}
+    - {label: "Background Color", name: "background", widget: "color"}
+    - {label: "Text Color", name: "color", widget: "color"}
+
 collections:
   - name: "pages"
     label: "Pages"
@@ -17,64 +42,100 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "homepage"}
           - {label: "Logo", name: "logo", widget: "image"}
-          - {label: "Join Us Background", name: "joinUsBackground", widget: "image"}
-          - {label: "Join Us Title", name: "joinUsTitle", widget: "string"}
-          - {label: "Join Us Button Text", name: "joinUsButtonText", widget: "string"}
-          - {label: "Join Us Button URL", name: "joinUsButtonURL", widget: "string"}
-          - {label: "Economy Background", name: "economyBackground", widget: "image"}
-          - {label: "Economy Title", name: "economyTitle", widget: "string"}
-          - {label: "Economy Upper Text", name: "economyUpperText", widget: "text"}
-          - label: "Economy Columns"
-            name: "economyColumns"
-            widget: "list"
+          - label: "Join Us"
+            name: "joinUs"
+            widget: "object"
+            fields:
+              - <<: *title
+              - <<: *backgroundImage
+              - <<: *button
+              - {label: "Logo", name: "logo", widget: "image"}
+          - label: "Economy"
+            name: "economy"
+            widget: "object"
+            fields:
+              - <<: *title
+              - <<: *backgroundImage
+              - {label: "Upper Text", name: "upperText", widget: "text"}
+              - label: "Columns"
+                name: "columns"
+                widget: "list"
+                fields:
+                  - <<: *title
+                  - <<: *body
+              - {label: "Lower Text", name: "lowerText", widget: "text"}
+              - <<: *button
+          - label: "FAQ"
+            name: "faq"
+            widget: "object"
+            fields:
+              - <<: *title
+              - <<: *backgroundImage
+              - label: "Questions"
+                name: "questions"
+                widget: "list"
+                fields:
+                  - {label: "Question", name: "question", widget: "string"}
+                  - {label: "Answer", name: "answer", widget: "text"}
+          - label: "Prodct"
+            name: "product"
+            widget: "object"
+            fields:
+              - <<: *title
+              - {label: "Secondary Title", name: "productSubtitle", widget: "string"}
+              - {label: "Logo", name: "logo", widget: "image"}
+              - <<: *body
+              - label: "Panels"
+                name: "panels"
+                widget: "list"
+                fields:
+                  - {label: "Image", name: "image", widget: "image"}
+                  - {label: "Text", name: "text", widget: "string"}
+                  - {label: "URL", name: "url", widget: "string"}
+          - label: "Perks"
+            name: "perks"
+            widget: "object"
+            fields:
+              - <<: *title
+              - label: "Columns"
+                name: "columns"
+                widget: "list"
+                fields:
+                  - <<: *title
+                  - {label: "Image", name: "image", widget: "image"}
+                  - {label: "Text", name: "text", widget: "string"}
+          - label: "Company"
+            name: "company"
+            widget: "object"
+            fields:
+              - <<: *title
+              - <<: *body
+              - {label: "Logo", name: "logo", widget: "image"}
+
+              - label: "Panels"
+                name: "panels"
+                widget: "list"
+                fields:
+                  - <<: *title
+                  - {label: "Progress", name: "progress", widget: "number"}
+                  - {label: "Text", name: "text", widget: "text"}
+          - label: "DPoS"
+            name: "dpos"
+            widget: "object"
+            fields:
+              - <<: *title
+              - <<: *body
+              - <<: *backgroundImage
+              - <<: *button
+          - label: "Newsletter"
+            name: "newsletter"
+            widget: "object"
+            fields:
+              - <<: *title
+              - <<: *backgroundImage
+              - <<: *button
+          - label: "Roadmap"
+            name: "roadmap"
+            widget: "object"
             fields:
               - {label: "Title", name: "title", widget: "string"}
-              - {label: "Body", name: "body", widget: "text"}
-          - {label: "Economy Lower Text", name: "economyLowerText", widget: "text"}
-          - {label: "Economy Button Text", name: "economyButtonText", widget: "string"}
-          - {label: "Economy Button URL", name: "economyButtonURL", widget: "string"}
-          - {label: "FAQ Background", name: "faqBackground", widget: "image"}
-          - {label: "FAQ Title", name: "faqTitle", widget: "string"}
-          - label: "FAQ Questions"
-            name: "faqQuestions"
-            widget: "list"
-            fields:
-              - {label: "Question", name: "question", widget: "string"}
-              - {label: "Answer", name: "answer", widget: "text"}
-          - {label: "Product Title", name: "productTitle", widget: "string"}
-          - {label: "Product Secondary Title", name: "productSubtitle", widget: "string"}
-          - {label: "Product Logo", name: "productLogo", widget: "image"}
-          - {label: "Product Body", name: "productBody", widget: "text"}
-          - label: "Product Panels"
-            name: "productPanels"
-            widget: "list"
-            fields:
-              - {label: "Image", name: "image", widget: "image"}
-              - {label: "Text", name: "text", widget: "string"}
-              - {label: "URL", name: "url", widget: "string"}
-              - {label: "Product Body", name: "productBody", widget: "text"}
-          - {label: "Perks Title", name: "perksTitle", widget: "string"}
-          - label: "Perks Columns"
-            name: "perksColumns"
-            widget: "list"
-            fields:
-              - {label: "Image", name: "image", widget: "image"}
-              - {label: "Title", name: "title", widget: "string"}
-              - {label: "Text", name: "text", widget: "string"}
-          - {label: "Company Title", name: "companyTitle", widget: "string"}
-          - {label: "Company Body", name: "companyBody", widget: "text"}
-          - {label: "Company Logo", name: "companyLogo", widget: "image"}
-          - label: "Company Panels"
-            name: "companyPanels"
-            widget: "list"
-            fields:
-              - {label: "Progress", name: "progress", widget: "number"}
-              - {label: "Title", name: "title", widget: "string"}
-              - {label: "Text", name: "text", widget: "text"}
-          - {label: "DPoS Title", name: "dposTitle", widget: "string"}
-          - {label: "DPoS Body", name: "dposBody", widget: "markdown"}
-          - {label: "DPoS Image", name: "dposImage", widget: "image"}
-          - {label: "DPoS Button Text", name: "dposButtonText", widget: "string"}
-          - {label: "DPoS Button URL", name: "dposButtonURL", widget: "string"}
-          - {label: "Newsletter Title", name: "newsletterTitle", widget: "string"}
-          - {label: "Newsletter Background", name: "newsletterBackground", widget: "image"}

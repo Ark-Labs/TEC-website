@@ -32,12 +32,12 @@ const SubmitButton = Button.withComponent('button').extend`
   border: none;
   cursor: pointer;
   background: #ff4f4f;
-  color: white;
+  color: white !important;
   min-width: 60%
 `
 
-const NewsletterSection = props => (
-  <Wrapper backgroundImage={props.newsletterBackground}>
+const NewsletterSection = ({ title, backgroundImage }) => (
+  <Wrapper backgroundImage={backgroundImage}>
     <Container>
       <Content>
         <form
@@ -50,7 +50,7 @@ const NewsletterSection = props => (
           <PaddedColumns isVCentered>
             <Column isSize="1/3">
               <Title color="black" noUnderline>
-                {props.newsletterTitle}
+                {title}
               </Title>
             </Column>
             <Column>

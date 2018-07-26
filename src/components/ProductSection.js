@@ -73,25 +73,27 @@ const PanelText = styled.div`
   text-align: center;
   width: 100%;
 `
-const ProductSection = props => (
+const ProductSection = ({ title, logo, subtitle, body, panels }) => (
   <Wrapper>
     <PaddedContainer>
       <Ribbon color="#388d6c" left="-40%" top />
       <Content>
-        <Title>{props.productTitle}</Title>
+        <Title>{title}</Title>
         <Columns>
           <Column>
-            <Logo src={props.productLogo} />
-            <SubTitle>{props.productSubtitle}</SubTitle>
+            <Logo src={logo} />
+            <SubTitle>{subtitle}</SubTitle>
           </Column>
           <Column>
-            <Body>{props.productBody}</Body>
-            <Button orange>Read more...</Button>
+            <Body>{body}</Body>
+            <Button background="#f7a825" color="white">
+              Read more...
+            </Button>
           </Column>
         </Columns>
 
         <Panels isGapless>
-          {props.productPanels.map(({ text, image, url }) => (
+          {panels.map(({ text, image, url }) => (
             <Panel key={text}>
               <PanelImage src={image} />
               <PanelContent href={url}>

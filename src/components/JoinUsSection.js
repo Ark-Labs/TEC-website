@@ -61,20 +61,18 @@ const StyledButton = Button.extend`
   }
 `
 
-const JoinUsSection = props => (
-  <Wrapper backgroundImage={props.joinUsBackground}>
+const JoinUsSection = ({ title, logo, backgroundImage, button }) => (
+  <Wrapper backgroundImage={backgroundImage}>
     <RibbonContainer>
       <Ribbon color="#e52839" right="60%" bottom />
       <Ribbon color="#f7a825" left="80%" top />
     </RibbonContainer>
     <PaddedContainer>
       <Content>
-        <Logo src={props.logo} />
-        <Title>{props.joinUsTitle}</Title>
+        <Logo src={logo} />
+        <Title>{title}</Title>
         <Underline />
-        <StyledButton href={props.joinUsButtonURL}>
-          {props.joinUsButtonText}
-        </StyledButton>
+        <StyledButton {...button} />
       </Content>
     </PaddedContainer>
   </Wrapper>

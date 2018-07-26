@@ -8,20 +8,23 @@ import PerksSection from 'components/PerksSection'
 import CompanySection from 'components/CompanySection'
 import DPoSSection from 'components/DPoSSection'
 import NewsletterSection from 'components/NewsletterSection'
+import RoadmapSection from 'components/RoadmapSection'
 
-export const HomepageTemplate = props => (
-  <div>
-    <Navbar {...props} />
-    <JoinUsSection {...props} />
-    <EconomySection {...props} />
-    <FAQSection {...props} />
-    <ProductSection {...props} />
-    <PerksSection {...props} />
-    <CompanySection {...props} />
-    <DPoSSection {...props} />
-    <NewsletterSection {...props} />
-  </div>
-)
+export const HomepageTemplate = props =>
+  console.log(props) || (
+    <div>
+      <Navbar {...props} />
+      <JoinUsSection {...props.joinUs} />
+      <EconomySection {...props.economy} />
+      <FAQSection {...props.faq} />
+      <ProductSection {...props.product} />
+      <PerksSection {...props.perks} />
+      <CompanySection {...props.company} />
+      <DPoSSection {...props.dpos} />
+      <NewsletterSection {...props.newsletter} />
+      <RoadmapSection {...props.roadmap} />
+    </div>
+  )
 
 const Homepage = ({ data }) => {
   const { markdownRemark: post } = data
@@ -37,56 +40,87 @@ export const HomepageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         logo
-        joinUsBackground
-        joinUsTitle
-        joinUsButtonText
-        joinUsButtonURL
-        economyBackground
-        economyTitle
-        economyUpperText
-        economyColumns {
+        joinUs {
+          backgroundImage
+          title
+          button {
+            children
+            color
+            background
+            href
+          }
+        }
+        economy {
+          backgroundImage
+          title
+          upperText
+          columns {
+            title
+            body
+          }
+          lowerText
+          button {
+            children
+            color
+            background
+            href
+          }
+        }
+        faq {
+          title
+          backgroundImage
+          questions {
+            question
+            answer
+          }
+        }
+        product {
+          title
+          logo
+          subtitle
+          body
+          panels {
+            image
+            text
+            url
+          }
+        }
+        perks {
+          title
+          columns {
+            image
+            title
+            text
+          }
+        }
+        company {
           title
           body
+          logo
+          panels {
+            progress
+            title
+            text
+          }
         }
-        economyLowerText
-        economyButtonText
-        economyButtonURL
-        faqBackground
-        faqTitle
-        faqQuestions {
-          question
-          answer
-        }
-        productTitle
-        productLogo
-        productSubtitle
-        productBody
-        productPanels {
-          image
-          text
-          url
-        }
-        perksTitle
-        perksColumns {
-          image
+        dpos {
           title
-          text
+          body
+          backgroundImage
+          button {
+            children
+            color
+            background
+            href
+          }
         }
-        companyTitle
-        companyBody
-        companyLogo
-        companyPanels {
-          progress
+        newsletter {
           title
-          text
+          backgroundImage
         }
-        dposTitle
-        dposBody
-        dposImage
-        dposButtonURL
-        dposButtonText
-        newsletterTitle
-        newsletterBackground
+        roadmap {
+          title
+        }
       }
     }
   }

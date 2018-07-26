@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Content, Title } from 'helpers'
-import { Container, Columns } from 'bloomer'
-import Perk from './Perk'
+import { Container } from 'bloomer'
 
 const Wrapper = styled.section`
   position: relative;
@@ -15,24 +14,14 @@ const PaddedContainer = styled(Container)`
   }
 `
 
-const PaddedColumns = styled(Columns)`
-  margin-top: 60px !important;
-  margin-bottom: 60px !important;
-  position: relative;
-`
-
-const PerksSection = ({ title, columns }) => (
+const RoadmapSection = ({ title }) => (
   <Wrapper>
     <PaddedContainer>
       <Content>
         <Title>{title}</Title>
-
-        <PaddedColumns>
-          {columns.map(perk => <Perk key={perk.title} {...perk} />)}
-        </PaddedColumns>
       </Content>
     </PaddedContainer>
   </Wrapper>
 )
 
-export default PerksSection
+export default RoadmapSection

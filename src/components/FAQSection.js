@@ -26,12 +26,13 @@ class FAQSection extends Component {
   }
 
   render() {
+    const { title, backgroundImage, questions } = this.props
     return (
       <Wrapper>
         <PaddedContainer>
-          <ContentWithBackground backgroundImage={this.props.faqBackground}>
-            <Title>{this.props.faqTitle}</Title>
-            {this.props.faqQuestions.map((question, index) => (
+          <ContentWithBackground backgroundImage={backgroundImage}>
+            <Title>{title}</Title>
+            {questions.map((question, index) => (
               <FAQQuestion
                 {...question}
                 key={index}

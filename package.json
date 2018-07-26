@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "author": "Untitled Kingdom",
   "dependencies": {
+    "@pake/react-color": "^3.0.0",
     "babel-eslint": "^8.2.6",
     "bloomer": "^0.6.3",
     "bulma": "^0.7.1",
@@ -29,6 +30,7 @@
     "lodash": "^4.17.5",
     "lodash-webpack-plugin": "^0.11.4",
     "netlify-cms": "^1.7.0",
+    "netlify-cms-widget-color": "^2.3.0",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-helmet": "^5.2.0",

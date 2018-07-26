@@ -41,7 +41,6 @@ const Content = styled.div`
 
 const Button = styled.a`
   display: inline-block;
-  color: black;
   font-size: 18px;
   font-weight: 500;
   text-align: center;
@@ -49,7 +48,8 @@ const Button = styled.a`
   border-radius: 28px;
   text-transform: uppercase;
   padding: 15px 50px;
-  ${props => props.orange && 'color: white !important; background: #f7a825;'};
+  color: ${props => props.color || '#333'} !important;
+  background: ${props => props.background || '#d6e600'};
 `
 
 const Title = styled.h4`

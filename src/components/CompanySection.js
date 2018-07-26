@@ -30,25 +30,23 @@ const Logo = styled.img`
   min-height: 300px;
 `
 
-const ProductSection = props => (
+const ProductSection = ({ title, body, logo, panels }) => (
   <Wrapper>
     <PaddedContainer>
       <Ribbon color="#f7a825" right="-33%" top inverse />
       <Content>
         <PaddedColumns>
           <Column>
-            <Title>{props.companyTitle}</Title>
-            <p>{props.companyBody}</p>
+            <Title>{title}</Title>
+            <p>{body}</p>
           </Column>
           <ImageColumn>
-            <Logo src={props.companyLogo} />
+            <Logo src={logo} />
           </ImageColumn>
         </PaddedColumns>
 
         <PaddedColumns>
-          {props.companyPanels.map(panel => (
-            <Panel key={panel.title} {...panel} />
-          ))}
+          {panels.map(panel => <Panel key={panel.title} {...panel} />)}
         </PaddedColumns>
       </Content>
     </PaddedContainer>

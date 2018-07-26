@@ -38,18 +38,18 @@ const Image = styled.img`
   }
 `
 
-const ProductSection = props => (
+const ProductSection = ({ title, body, backgroundImage, button }) => (
   <Wrapper>
     <PaddedContainer>
       <Content>
         <Columns>
           <Column isSize="2/3">
-            <Title>{props.dposTitle}</Title>
-            <Body>{props.dposBody}</Body>
+            <Title>{title}</Title>
+            <Body>{body}</Body>
           </Column>
           <CenteredColumn>
-            <Image src={props.dposImage} />
-            <Button href={props.dposButtonURL}>{props.dposButtonText}</Button>
+            <Image src={backgroundImage} />
+            <Button {...button} />
           </CenteredColumn>
         </Columns>
       </Content>
