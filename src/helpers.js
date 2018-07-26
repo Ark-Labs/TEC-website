@@ -48,7 +48,7 @@ const Button = styled.a`
   background: #d6e600;
   border-radius: 28px;
   text-transform: uppercase;
-  padding: 10px 50px;
+  padding: 15px 50px;
   ${props => props.orange && 'color: white !important; background: #f7a825;'};
 `
 
@@ -66,7 +66,7 @@ const Title = styled.h4`
 
   &:after {
     content: '';
-    display: block;
+    display: ${props => (props.noUnderline ? 'none' : 'block')};
     margin: 10px 0;
     width: ${props => props.underlineWidth || '100px'};
     height: 8px;

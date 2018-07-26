@@ -5,47 +5,54 @@ import { Container, Columns, Column } from 'bloomer'
 
 const Wrapper = styled.section`
   position: relative;
-`
-
-const PaddedContainer = styled(Container)`
-  padding: 60px 0;
-  @media (max-width: 768px) {
-    padding: 60px 0 28px;
-  }
-`
-
-const PaddedColumns = styled(Columns)`
-  margin-top: 60px !important;
-  margin-bottom: 60px !important;
-  position: relative;
-`
-
-const ContentWithBackground = Content.extend`
+  background: #f7a825;
   background-image: url(${props => props.backgroundImage});
-  background-size: contain;
+  background-size: 80%;
   background-position: center right;
   background-repeat: no-repeat;
 `
 
-const TextField = 
+const TextField = styled.input`
+  display: block;
+  padding: 15px;
+  width: 100%;
+  font-size: 16px;
+  border: 1px solid #9b9b9b;
+`
+
+const PaddedColumns = styled(Columns)`
+  padding: 30px 0;
+`
+
+const SubmitButton = Button.withComponent('button').extend`
+  outline: none;
+  border: none;
+  cursor: pointer;
+`
 
 const NewsletterSection = props => (
-  <Wrapper>
-    <PaddedContainer>
-      <ContentWithBackground backgroundImage={props.economyBackground}>
-        <PaddedColumns>
-          <Column>
-            <Title>{props.newsletterTitle}</Title>
+  <Wrapper backgroundImage={props.newsletterBackground}>
+    <Container>
+      <Content>
+        <PaddedColumns isVCentered>
+          <Column isSize="1/3">
+            <Title color="black" noUnderline>
+              {props.newsletterTitle}
+            </Title>
           </Column>
           <Column>
-            <TextField name="email" />
+            <form name="newsletter" method="POST" netlify>
+              <TextField name="email" type="email" placeholder="Email" />
+            </form>
           </Column>
-          <Column>
-            <Button color="#ff4f4f">Subscribe</Button>
+          <Column isSize="narrow">
+            <SubmitButton color="#ff4f4f" type="submit">
+              Subscribe
+            </SubmitButton>
           </Column>
         </PaddedColumns>
-      </ContentWithBackground>
-    </PaddedContainer>
+      </Content>
+    </Container>
   </Wrapper>
 )
 

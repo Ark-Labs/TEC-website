@@ -76,3 +76,5 @@ collections:
           - {label: "DPoS Image", name: "dposImage", widget: "image"}
           - {label: "DPoS Button Text", name: "dposButtonText", widget: "string"}
           - {label: "DPoS Button URL", name: "dposButtonURL", widget: "string"}
+          - {label: "Newsletter Title", name: "newsletterTitle", widget: "string"}
+          - {label: "Newsletter Background", name: "newsletterBackground", widget: "image"}

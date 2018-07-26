@@ -7,6 +7,7 @@ import ProductSection from 'components/ProductSection'
 import PerksSection from 'components/PerksSection'
 import CompanySection from 'components/CompanySection'
 import DPoSSection from 'components/DPoSSection'
+import NewsletterSection from 'components/NewsletterSection'
 
 export const HomepageTemplate = props => (
   <div>
@@ -18,6 +19,7 @@ export const HomepageTemplate = props => (
     <PerksSection {...props} />
     <CompanySection {...props} />
     <DPoSSection {...props} />
+    <NewsletterSection {...props} />
   </div>
 )
 
@@ -83,6 +85,8 @@ export const HomepageQuery = graphql`
         dposImage
         dposButtonURL
         dposButtonText
+        newsletterTitle
+        newsletterBackground
       }
     }
   }

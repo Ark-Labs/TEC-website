@@ -83,10 +83,10 @@ companyPanels:
     title: Great Team Collaboration
     text: There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope. It’s exciting to think about setting.
   - progress: 60
-    title: Great Team Collaboration
+    title: Great Team Collaboration 2
     text: There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope. It’s exciting to think about setting.
   - progress: 100
-    title: Great Team Collaboration
+    title: Great Team Collaboration 3
     text: There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope. It’s exciting to think about setting.
 dposTitle: The Makers Ark Blockchain DPoS
 dposBody: >-
@@ -104,4 +104,6 @@ dposBody: >-
 dposImage: /img/blockchain.png
 dposButtonURL: '#dpos'
 dposButtonText: Ark Blockchain DPoS
+newsletterTitle: "Subscribe to our newsletter"
+newsletterBackground: '/img/repairing-economy-background.png'
 ---
