@@ -21,12 +21,11 @@ const Logo = styled.img`
 const Menu = styled.div`
   display: flex;
   font-size: 16px;
-  width: 100%;
   @media (max-width: 768px) {
     display: ${props => (props.open ? 'flex' : 'none')};
     flex-direction: column;
     align-items: center;
-}
+    width: 100%;
   }
 `
 
