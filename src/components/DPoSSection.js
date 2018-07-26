@@ -27,12 +27,15 @@ const CenteredColumn = styled(Column)`
 `
 
 const Image = styled.img`
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 110%;
-  max-width: none;
-  transform: translateY(-50%);
+  margin-bottom: 20px;
+  @media (min-width: 768px) {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 110%;
+    max-width: none;
+    transform: translateY(-50%);
+  }
 `
 
 const ProductSection = props => (

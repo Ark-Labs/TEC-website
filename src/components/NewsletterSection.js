@@ -10,6 +10,9 @@ const Wrapper = styled.section`
   background-size: 80%;
   background-position: center right;
   background-repeat: no-repeat;
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 `
 
 const TextField = styled.input`
@@ -28,6 +31,9 @@ const SubmitButton = Button.withComponent('button').extend`
   outline: none;
   border: none;
   cursor: pointer;
+  background: #ff4f4f;
+  color: white;
+  min-width: 60%
 `
 
 const NewsletterSection = props => (
