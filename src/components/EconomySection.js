@@ -20,12 +20,6 @@ const StyledButton = Button.extend`
   margin: 60px auto 0;
 `
 
-const StyledRibbon = styled(Ribbon)`
-  @media (max-width: 768px) {
-    right: 60%;
-  }
-`
-
 const ContentWithBackground = Content.extend`
   background-image: url(${props => props.backgroundImage});
   background-size: contain;
@@ -41,7 +35,7 @@ const PaddedColumns = styled(Columns)`
 const EconomySection = props => (
   <Wrapper id="about">
     <RibbonContainer>
-      <StyledRibbon color="#e52839" right="calc(60% - 600px)" top />
+      <Ribbon color="#e52839" right="60%" top />
     </RibbonContainer>
     <PaddedContainer>
       <ContentWithBackground backgroundImage={props.economyBackground}>
