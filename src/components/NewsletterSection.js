@@ -40,23 +40,23 @@ const NewsletterSection = props => (
   <Wrapper backgroundImage={props.newsletterBackground}>
     <Container>
       <Content>
-        <PaddedColumns isVCentered>
-          <Column isSize="1/3">
-            <Title color="black" noUnderline>
-              {props.newsletterTitle}
-            </Title>
-          </Column>
-          <Column>
-            <form name="newsletter" method="POST" netlify>
+        <form name="newsletter" method="POST" data-netlify="true">
+          <PaddedColumns isVCentered>
+            <Column isSize="1/3">
+              <Title color="black" noUnderline>
+                {props.newsletterTitle}
+              </Title>
+            </Column>
+            <Column>
               <TextField name="email" type="email" placeholder="Email" />
-            </form>
-          </Column>
-          <Column isSize="narrow">
-            <SubmitButton color="#ff4f4f" type="submit">
-              Subscribe
-            </SubmitButton>
-          </Column>
-        </PaddedColumns>
+            </Column>
+            <Column isSize="narrow">
+              <SubmitButton color="#ff4f4f" type="submit">
+                Subscribe
+              </SubmitButton>
+            </Column>
+          </PaddedColumns>
+        </form>
       </Content>
     </Container>
   </Wrapper>
