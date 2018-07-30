@@ -9,6 +9,7 @@ import CompanySection from 'components/CompanySection'
 import DPoSSection from 'components/DPoSSection'
 import NewsletterSection from 'components/NewsletterSection'
 import RoadmapSection from 'components/RoadmapSection'
+import DistributionSection from 'components/DistributionSection'
 
 export const HomepageTemplate = props =>
   console.log(props) || (
@@ -23,6 +24,7 @@ export const HomepageTemplate = props =>
       <DPoSSection {...props.dpos} />
       <NewsletterSection {...props.newsletter} />
       <RoadmapSection {...props.roadmap} />
+      <DistributionSection {...props.distribution} />
     </div>
   )
 
@@ -123,6 +125,18 @@ export const HomepageQuery = graphql`
           events {
             date
             text
+          }
+        }
+        distribution {
+          title
+          distribution {
+            name
+            value
+            color
+          }
+          tranches {
+            name
+            value
           }
         }
       }

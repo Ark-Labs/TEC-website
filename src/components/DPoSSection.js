@@ -38,7 +38,7 @@ const Image = styled.img`
   }
 `
 
-const ProductSection = ({ title, body, backgroundImage, button }) => (
+const DPoSSection = ({ title, body, backgroundImage, button }) => (
   <Wrapper>
     <PaddedContainer>
       <Content>
@@ -57,4 +57,4 @@ const ProductSection = ({ title, body, backgroundImage, button }) => (
   </Wrapper>
 )
 
-export default ProductSection
+export default DPoSSection

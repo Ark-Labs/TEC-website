@@ -142,4 +142,22 @@ roadmap:
       text: Presale Start Bonus 65%
     - date: 29 Oct 2018
       text: Presale Start Bonus 75%
+distribution:
+  title: 'Distribution'
+  distribution:
+    - name: Team
+      value: 30
+      color: "#f7a825"
+    - name: Sale
+      value: 70
+      color: "#e52839"
+  tranches:
+    - name: Tranch 1
+    - value: 10%
+    - name: Tranch 2
+    - value: 10%
+    - name: Tranch 3
+    - value: 10%
+    - name: Tranch 4
+    - value: 10%
 ---
