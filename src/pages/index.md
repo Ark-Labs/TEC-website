@@ -196,4 +196,16 @@ partners:
     - /img/ark-labs.svg
     - /img/ark-labs.svg
     - /img/ark-labs.svg
+contact:
+  title: Contact Us
+  address: '231 North Star  34th Street, Suite #100 Cupertino, 98103'
+  socialLinks:
+    - image: /img/facebook.svg
+      href: 'https://facebook.com/'
+    - image: /img/twitter.svg
+      href: 'https://twitter.com/'
+    - image: /img/linked-in.svg
+      href: 'https://linkedin.com/'
+    - image: /img/google-plus.svg
+      href: 'https://google.com/'
 ---
