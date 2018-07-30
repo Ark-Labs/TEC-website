@@ -125,4 +125,21 @@ newsletter:
   backgroundImage: '/img/repairing-economy-background.png'
 roadmap:
   title: 'Roadmap'
+  events:
+    - date: 24 Oct 2017
+      text: Presale Start Bonus 5%
+    - date: 25 Oct 2017
+      text: Presale Start Bonus 15%
+    - date: 26 Oct 2017
+      text: Presale Start Bonus 25%
+    - date: 29 Oct 2017
+      text: Presale Start Bonus 35%
+    - date: 24 Oct 2018
+      text: Presale Start Bonus 45%
+    - date: 25 Oct 2018
+      text: Presale Start Bonus 55%
+    - date: 26 Oct 2018
+      text: Presale Start Bonus 65%
+    - date: 29 Oct 2018
+      text: Presale Start Bonus 75%
 ---

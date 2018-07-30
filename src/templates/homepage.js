@@ -120,6 +120,10 @@ export const HomepageQuery = graphql`
         }
         roadmap {
           title
+          events {
+            date
+            text
+          }
         }
       }
     }

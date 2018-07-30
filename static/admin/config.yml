@@ -77,7 +77,7 @@ collections:
                 fields:
                   - {label: "Question", name: "question", widget: "string"}
                   - {label: "Answer", name: "answer", widget: "text"}
-          - label: "Prodct"
+          - label: "Product"
             name: "product"
             widget: "object"
             fields:
