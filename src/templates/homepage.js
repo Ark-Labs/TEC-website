@@ -13,6 +13,7 @@ import DistributionSection from 'components/DistributionSection'
 import TeamSection from 'components/TeamSection'
 import PartnersSection from 'components/PartnersSection'
 import ContactSection from 'components/ContactSection'
+import Footer from 'components/Footer'
 
 export const HomepageTemplate = props =>
   console.log(props) || (
@@ -31,6 +32,7 @@ export const HomepageTemplate = props =>
       <TeamSection {...props.team} />
       <PartnersSection {...props.partners} />
       <ContactSection {...props.contact} />
+      <Footer {...props} />
     </div>
   )
 
@@ -48,6 +50,7 @@ export const HomepageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         logo
+        copyright
         joinUs {
           backgroundImage
           title

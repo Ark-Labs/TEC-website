@@ -1,6 +1,7 @@
 ---
 templateKey: homepage
 logo: /img/logo.svg
+copyright: "© 2018  Copyrigts are Creative Commons"
 joinUs:
   title: Join us as we build a better maker space on the blockchain
   backgroundImage: /img/join-us-background.png
