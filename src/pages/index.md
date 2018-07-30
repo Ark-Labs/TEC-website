@@ -187,4 +187,13 @@ team:
     - image: /img/team-0.jpg
       name: 'Mike Doty 8'
       description: 'CEO - Founder MAKERS ARK'
+partners:
+  title: Partners
+  partners:
+    - /img/ark-labs.svg
+    - /img/ark-labs.svg
+    - /img/ark-labs.svg
+    - /img/ark-labs.svg
+    - /img/ark-labs.svg
+    - /img/ark-labs.svg
 ---

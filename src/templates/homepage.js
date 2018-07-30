@@ -11,6 +11,7 @@ import NewsletterSection from 'components/NewsletterSection'
 import RoadmapSection from 'components/RoadmapSection'
 import DistributionSection from 'components/DistributionSection'
 import TeamSection from 'components/TeamSection'
+import PartnersSection from 'components/PartnersSection'
 
 export const HomepageTemplate = props =>
   console.log(props) || (
@@ -27,6 +28,7 @@ export const HomepageTemplate = props =>
       <RoadmapSection {...props.roadmap} />
       <DistributionSection {...props.distribution} />
       <TeamSection {...props.team} />
+      <PartnersSection {...props.partners} />
     </div>
   )
 
@@ -148,6 +150,10 @@ export const HomepageQuery = graphql`
             image
             description
           }
+        }
+        partners {
+          title
+          partners
         }
       }
     }
