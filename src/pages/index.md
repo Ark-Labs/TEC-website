@@ -160,4 +160,31 @@ distribution:
       value: 40
     - name: Tranch 4
       value: 30
+team:
+  title: 'Our Team'
+  members:
+    - image: /img/team-0.jpg
+      name: 'Mike Doty'
+      description: 'CEO - Founder MAKERS ARK'
+    - image: /img/team-0.jpg
+      name: 'Mike Doty 2'
+      description: 'CEO - Founder MAKERS ARK'
+    - image: /img/team-0.jpg
+      name: 'Mike Doty 3'
+      description: 'CEO - Founder MAKERS ARK'
+    - image: /img/team-0.jpg
+      name: 'Mike Doty 4'
+      description: 'CEO - Founder MAKERS ARK'
+    - image: /img/team-0.jpg
+      name: 'Mike Doty 5'
+      description: 'CEO - Founder MAKERS ARK'
+    - image: /img/team-0.jpg
+      name: 'Mike Doty 6'
+      description: 'CEO - Founder MAKERS ARK'
+    - image: /img/team-0.jpg
+      name: 'Mike Doty 7'
+      description: 'CEO - Founder MAKERS ARK'
+    - image: /img/team-0.jpg
+      name: 'Mike Doty 8'
+      description: 'CEO - Founder MAKERS ARK'
 ---
