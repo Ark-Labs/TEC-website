@@ -143,7 +143,7 @@ roadmap:
     - date: 29 Oct 2018
       text: Presale Start Bonus 75%
 distribution:
-  title: 'Distribution'
+  title: 'Token Distribution'
   distribution:
     - name: Team
       value: 30
@@ -153,11 +153,11 @@ distribution:
       color: "#e52839"
   tranches:
     - name: Tranch 1
-    - value: 10%
+      value: 10
     - name: Tranch 2
-    - value: 10%
+      value: 20
     - name: Tranch 3
-    - value: 10%
+      value: 40
     - name: Tranch 4
-    - value: 10%
+      value: 30
 ---

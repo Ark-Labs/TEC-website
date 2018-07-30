@@ -18,7 +18,7 @@ const PaddedContainer = styled(Container)`
 const CenteredColumn = styled(Column)`
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
 `
 
@@ -54,7 +54,36 @@ const Labels = styled(Columns)`
   margin-top: 0;
 `
 
-const DistributionSection = ({ title, distribution }) => (
+const Tranch = styled.div`
+  font-size: 24px;
+  font-weight: bold;
+  margin: 8px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
+const Progress = styled.div`
+  background: #757476;
+  height: 20px;
+  width: 100%;
+  border-radius: 9px;
+  margin-right: 20px;
+`
+
+const Bar = styled.div`
+  width: ${props => props.value}%;
+  height: 100%;
+  border-radius: 9px;
+  background-image: linear-gradient(to left, #f5515f, #9f041b);
+`
+
+const ProgressDescription = styled.div`
+  white-space: nowrap;
+`
+
+const DistributionSection = ({ title, distribution, tranches }) => (
   <Wrapper>
     <PaddedContainer>
       <Content>
@@ -69,6 +98,7 @@ const DistributionSection = ({ title, distribution }) => (
                     data={distribution}
                     dataKey="value"
                     nameKey="name"
+                    startAngle={0}
                     innerRadius="75%"
                     outerRadius="90%"
                     fill="#8884d8"
@@ -93,7 +123,18 @@ const DistributionSection = ({ title, distribution }) => (
               ))}
             </Labels>
           </CenteredColumn>
-          <Column />
+          <CenteredColumn>
+            {tranches.map(({ name, value }) => (
+              <Tranch key={name}>
+                <Progress>
+                  <Bar value={value} />
+                </Progress>
+                <ProgressDescription>
+                  {value}% • {name}
+                </ProgressDescription>
+              </Tranch>
+            ))}
+          </CenteredColumn>
         </Columns>
       </Content>
     </PaddedContainer>
