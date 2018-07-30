@@ -13,6 +13,10 @@ const Wrapper = styled.section`
 const NarrowContainer = styled.div`
   max-width: 640px;
   margin: 0 auto;
+
+  @media (max-width: 768px) {
+    margin: auto 15px;
+  }
 `
 
 const TextField = styled.input`
@@ -49,16 +53,31 @@ const ContactInfo = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 60px 0 0;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `
 
 const Address = styled.div`
   font-size: 16px;
   font-weight: bold;
   max-width: 300px;
-  display: fixed;
+  display: flex;
   align-items: center;
   img {
     margin-right: 10px;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+    img {
+      margin: 0 0 20px;
+    }
   }
 `
 

@@ -52,6 +52,7 @@ const Bullet = styled.span`
 
 const Labels = styled(Columns)`
   margin-top: 0;
+  display: flex;
 `
 
 const Tranch = styled.div`
@@ -117,7 +118,7 @@ const DistributionSection = ({ title, distribution, tranches }) => (
             </PieChartWrapper>
             <Labels>
               {distribution.map(({ color, name, value }) => (
-                <Legend key={name} color={color} isSize="1/2">
+                <Legend key={name} color={color} isSize={'1/2'}>
                   {value}% <Bullet>•</Bullet> {name}
                 </Legend>
               ))}

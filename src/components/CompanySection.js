@@ -8,6 +8,10 @@ const Wrapper = styled.section`
   position: relative;
 `
 
+const StyledRibbon = styled(Ribbon)`
+  width: 100%;
+`
+
 const PaddedContainer = styled(Container)`
   padding: 60px 0;
   @media (max-width: 768px) {
@@ -22,18 +26,20 @@ const PaddedColumns = styled(Columns)`
 `
 
 const ImageColumn = styled(Column)`
+  position: relative;
   text-align: center;
 `
 
 const Logo = styled.img`
   height: 100%;
   min-height: 300px;
+  position: relative;
+  z-index: 2;
 `
 
 const ProductSection = ({ title, body, logo, panels }) => (
   <Wrapper>
     <PaddedContainer>
-      <Ribbon color="#f7a825" right="-33%" top inverse />
       <Content>
         <PaddedColumns>
           <Column>
@@ -41,6 +47,7 @@ const ProductSection = ({ title, body, logo, panels }) => (
             <p>{body}</p>
           </Column>
           <ImageColumn>
+            <StyledRibbon color="#f7a825" left="300px" top inverse />
             <Logo src={logo} />
           </ImageColumn>
         </PaddedColumns>

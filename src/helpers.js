@@ -26,12 +26,14 @@ const Ribbon = styled.div`
   background-color: ${props => props.color};
   opacity: 0.8;
   position: absolute;
-  bottom: ${props => (props.bottom ? '-100%' : 'unset')};
-  top: ${props => (props.top ? '-100%' : 'unset')};
+  bottom: ${props => (props.bottom ? '0' : 'unset')};
+  top: ${props => (props.top ? '0' : 'unset')};
   ${props => (props.left ? `left: ${props.left}` : `right: ${props.right}`)};
-  height: 200%;
+  height: 1px;
   width: 600px;
-  transform: skewX(${props => (props.inverse ? '-55deg' : '55deg')});
+  transform: skewX(${props =>
+    props.inverse ? '-55deg' : '55deg'}) scale3d(1, 9999, 1);
+}
 `
 
 const Content = styled.div`
@@ -57,6 +59,7 @@ const Title = styled.h4`
   font-size: 36px;
   line-height: 1.17;
   margin-bottom: 10px;
+  text-transform: uppercase;
   color: ${props => props.color || 'white'};
 
   @media (max-width: 768px) {

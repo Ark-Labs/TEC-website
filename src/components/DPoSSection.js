@@ -17,6 +17,7 @@ const PaddedContainer = styled(Container)`
 const Body = styled.div`
   margin-bottom: 36px;
   white-space: pre-line;
+  font-size: 18px;
 `
 
 const CenteredColumn = styled(Column)`

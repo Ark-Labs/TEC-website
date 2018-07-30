@@ -38,21 +38,25 @@ const TeamMember = styled(Column)`
   margin-bottom: 2rem;
 `
 
+const TeamMembers = styled(Columns)`
+  display: flex;
+`
+
 const TeamSection = ({ title, members }) => (
   <Wrapper>
     <PaddedContainer>
-      <Ribbon color="#e52839" left="-40%" top />
+      <Ribbon color="#e52839" left="-600px" top />
       <Content>
         <Title>{title}</Title>
-        <Columns isMultiline>
+        <TeamMembers isMultiline>
           {members.map(({ image, name, description }) => (
-            <TeamMember isSize="1/4" key={name}>
+            <TeamMember isSize={{ desktop: '1/4', mobile: '1/2' }} key={name}>
               <Image src={image} />
               <Name>{name}</Name>
               <Description>{description}</Description>
             </TeamMember>
           ))}
-        </Columns>
+        </TeamMembers>
       </Content>
     </PaddedContainer>
   </Wrapper>

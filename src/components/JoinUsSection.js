@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { RibbonContainer, Ribbon, Content, Button } from 'helpers'
+import { Ribbon, Content, Button } from 'helpers'
 import { Container } from 'bloomer'
 
 const Wrapper = styled.section`
@@ -54,7 +54,7 @@ const Underline = styled.div`
 const StyledButton = Button.extend`
   @media (max-width: 768px) {
     position: absolute;
-    bottom: -76px;
+    bottom: -80px;
     margin-left: 50%;
     transform: translateX(-50%);
     white-space: nowrap;
@@ -63,11 +63,8 @@ const StyledButton = Button.extend`
 
 const JoinUsSection = ({ title, logo, backgroundImage, button }) => (
   <Wrapper backgroundImage={backgroundImage}>
-    <RibbonContainer>
-      <Ribbon color="#e52839" right="60%" bottom />
-      <Ribbon color="#f7a825" left="80%" top />
-    </RibbonContainer>
     <PaddedContainer>
+      <Ribbon color="#f7a825" right="-400px" top />
       <Content>
         <Logo src={logo} />
         <Title>{title}</Title>

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { RibbonContainer, Ribbon, Content, Title, Button } from 'helpers'
+import { Ribbon, Content, Title, Button } from 'helpers'
 import { Container, Columns, Column } from 'bloomer'
 
 const Wrapper = styled.section`
@@ -32,6 +32,12 @@ const PaddedColumns = styled(Columns)`
   margin-bottom: 20px !important;
 `
 
+const StyledRibbon = styled(Ribbon)`
+  @media (max-width: 768px) {
+    left: -360px;
+  }
+`
+
 const EconomySection = ({
   title,
   backgroundImage,
@@ -41,10 +47,8 @@ const EconomySection = ({
   button
 }) => (
   <Wrapper id="about">
-    <RibbonContainer>
-      <Ribbon color="#e52839" right="60%" top />
-    </RibbonContainer>
     <PaddedContainer>
+      <StyledRibbon color="#e52839" left="-80px" top />
       <ContentWithBackground backgroundImage={backgroundImage}>
         <Title>{title}</Title>
         <p>{upperText}</p>

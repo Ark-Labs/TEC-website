@@ -76,7 +76,7 @@ const PanelText = styled.div`
 const ProductSection = ({ title, logo, subtitle, body, panels }) => (
   <Wrapper>
     <PaddedContainer>
-      <Ribbon color="#388d6c" left="-40%" top />
+      <Ribbon color="#388d6c" left="-450px" top />
       <Content>
         <Title>{title}</Title>
         <Columns>

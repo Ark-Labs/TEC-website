@@ -3,6 +3,12 @@ import Link from 'gatsby-link'
 import styled from 'styled-components'
 import { Container } from 'bloomer'
 
+const Wrapper = styled.div`
+  background: black;
+  position: relative;
+  z-index: 2;
+`
+
 const Nav = styled.nav`
   min-height: 128px;
   display: flex;
@@ -80,20 +86,24 @@ class Navbar extends React.Component {
 
   render() {
     return (
-      <Container>
-        <Nav>
-          <Logo src={this.props.logo} />
-          <Hamburger onClick={this.toggle} />
-          <Menu open={this.state.open}>
-            <NavbarLink to="#about">About</NavbarLink>
-            <NavbarLink to="#marketplaces">Marketplaces / Ark Labs</NavbarLink>
-            <NavbarLink to="#blockchain">Blockchain</NavbarLink>
-            <NavbarLink to="#roadmap">Roadmap</NavbarLink>
-            <NavbarLink to="#team">Team</NavbarLink>
-            <NavbarLink to="#contact">Contact</NavbarLink>
-          </Menu>
-        </Nav>
-      </Container>
+      <Wrapper>
+        <Container>
+          <Nav>
+            <Logo src={this.props.logo} />
+            <Hamburger onClick={this.toggle} />
+            <Menu open={this.state.open}>
+              <NavbarLink to="#about">About</NavbarLink>
+              <NavbarLink to="#marketplaces">
+                Marketplaces / Ark Labs
+              </NavbarLink>
+              <NavbarLink to="#blockchain">Blockchain</NavbarLink>
+              <NavbarLink to="#roadmap">Roadmap</NavbarLink>
+              <NavbarLink to="#team">Team</NavbarLink>
+              <NavbarLink to="#contact">Contact</NavbarLink>
+            </Menu>
+          </Nav>
+        </Container>
+      </Wrapper>
     )
   }
 }

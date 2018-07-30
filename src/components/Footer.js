@@ -7,10 +7,16 @@ const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `
 
 const Logo = styled.img`
   height: 80px;
+  @media (max-width: 768px) {
+    margin: 20px 0;
+  }
 `
 
 const Copyright = styled.div`
@@ -18,6 +24,9 @@ const Copyright = styled.div`
   text-align: center;
   margin-left: -102px;
   font-size: 12px;
+  @media (max-width: 768px) {
+    margin: 0 0 20px;
+  }
 `
 
 const Footer = ({ logo, copyright }) => (
