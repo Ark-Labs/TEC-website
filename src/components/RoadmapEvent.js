@@ -22,9 +22,7 @@ const Arrow = styled(({ active, ...props }) => (
   </svg>
 ))`
   transform: rotate(
-    ${props =>
-      console.log(props.direction) ||
-      (props.direction === 'top' ? '90deg' : '-90deg')}
+    ${props => (props.direction === 'top' ? '90deg' : '-90deg')}
   );
 `
 

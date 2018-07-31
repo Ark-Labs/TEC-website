@@ -92,7 +92,7 @@ const SocialLink = styled.a`
 `
 
 const ContactSection = ({ title, address, socialLinks }) => (
-  <Wrapper>
+  <Wrapper id="contact">
     <NarrowContainer>
       <Content>
         <Title>{title}</Title>

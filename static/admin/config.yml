@@ -111,7 +111,6 @@ collections:
               - <<: *title
               - <<: *body
               - {label: "Logo", name: "logo", widget: "image"}
-
               - label: "Panels"
                 name: "panels"
                 widget: "list"
@@ -133,9 +132,67 @@ collections:
             fields:
               - <<: *title
               - <<: *backgroundImage
-              - <<: *button
           - label: "Roadmap"
             name: "roadmap"
             widget: "object"
             fields:
-              - {label: "Title", name: "title", widget: "string"}
+              - <<: *title
+              - label: "Events"
+                name: "events"
+                widget: "list"
+                fields:
+                  - {label: "Date", name: "date", widget: "date", format: "DD MMM YYYY"}
+                  - {label: "Text", name: "text", widget: "text"}
+          - label: "Distribution"
+            name: "distribution"
+            widget: "object"
+            fields:
+              - <<: *title
+              - label: "Distribution"
+                name: "distribution"
+                widget: "list"
+                fields:
+                  - {label: "Name", name: "name", widget: "string"}
+                  - {label: "Percentage", name: "value", widget: "number"}
+                  - {label: "Color", name: "color", widget: "color"}
+              - label: "Tranches"
+                name: "tranches"
+                widget: "list"
+                fields:
+                  - {label: "Name", name: "name", widget: "string"}
+                  - {label: "Percentage", name: "value", widget: "number"}
+          - label: "Team"
+            name: "team"
+            widget: "object"
+            fields:
+              - <<: *title
+              - label: "Members"
+                name: "members"
+                widget: "list"
+                fields:
+                  - {label: "Image", name: "image", widget: "image"}
+                  - {label: "Name", name: "name", widget: "string"}
+                  - {label: "Description", name: "description", widget: "string"}
+          - label: "Partners"
+            name: "partners"
+            widget: "object"
+            fields:
+              - <<: *title
+              - label: "Partners"
+                name: "partners"
+                widget: "list"
+                field:
+                  - {label: Image, name: image, widget: image}
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - <<: *title
+              - {label: "Address", name: "address", widget: "string"}
+              - label: "Social Links"
+                name: "socialLinks"
+                widget: "list"
+                fields:
+                  - {label: Image, name: image, widget: image}
+                  - {label: "URL", name: "href", widget: "string"}
+          - {label: "Copyright", name: "copyright", widget: "string"}

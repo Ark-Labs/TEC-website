@@ -1,7 +1,7 @@
 ---
 templateKey: homepage
 logo: /img/logo.svg
-copyright: "© 2018  Copyrigts are Creative Commons"
+copyright: "© 2018  Copyrights are Creative Commons"
 joinUs:
   title: Join us as we build a better maker space on the blockchain
   backgroundImage: /img/join-us-background.png
@@ -191,12 +191,12 @@ team:
 partners:
   title: Partners
   partners:
-    - /img/ark-labs.svg
-    - /img/ark-labs.svg
-    - /img/ark-labs.svg
-    - /img/ark-labs.svg
-    - /img/ark-labs.svg
-    - /img/ark-labs.svg
+    - image: /img/ark-labs.svg
+    - image: /img/ark-labs.svg
+    - image: /img/ark-labs.svg
+    - image: /img/ark-labs.svg
+    - image: /img/ark-labs.svg
+    - image: /img/ark-labs.svg
 contact:
   title: Contact Us
   address: '231 North Star  34th Street, Suite #100 Cupertino, 98103'

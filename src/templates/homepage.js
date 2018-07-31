@@ -15,26 +15,25 @@ import PartnersSection from 'components/PartnersSection'
 import ContactSection from 'components/ContactSection'
 import Footer from 'components/Footer'
 
-export const HomepageTemplate = props =>
-  console.log(props) || (
-    <div>
-      <Navbar {...props} />
-      <JoinUsSection {...props.joinUs} />
-      <EconomySection {...props.economy} />
-      <FAQSection {...props.faq} />
-      <ProductSection {...props.product} />
-      <PerksSection {...props.perks} />
-      <CompanySection {...props.company} />
-      <DPoSSection {...props.dpos} />
-      <NewsletterSection {...props.newsletter} />
-      <RoadmapSection {...props.roadmap} />
-      <DistributionSection {...props.distribution} />
-      <TeamSection {...props.team} />
-      <PartnersSection {...props.partners} />
-      <ContactSection {...props.contact} />
-      <Footer {...props} />
-    </div>
-  )
+export const HomepageTemplate = props => (
+  <div>
+    <Navbar {...props} />
+    <JoinUsSection {...props.joinUs} />
+    <EconomySection {...props.economy} />
+    <FAQSection {...props.faq} />
+    <ProductSection {...props.product} />
+    <PerksSection {...props.perks} />
+    <CompanySection {...props.company} />
+    <DPoSSection {...props.dpos} />
+    <NewsletterSection {...props.newsletter} />
+    <RoadmapSection {...props.roadmap} />
+    <DistributionSection {...props.distribution} />
+    <TeamSection {...props.team} />
+    <PartnersSection {...props.partners} />
+    <ContactSection {...props.contact} />
+    <Footer {...props} />
+  </div>
+)
 
 const Homepage = ({ data }) => {
   const { markdownRemark: post } = data
@@ -158,7 +157,9 @@ export const HomepageQuery = graphql`
         }
         partners {
           title
-          partners
+          partners {
+            image
+          }
         }
         contact {
           title

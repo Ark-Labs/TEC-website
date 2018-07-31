@@ -8,6 +8,8 @@ const Wrapper = styled.div`
   background: rgba(255, 255, 255, 0.8);
   padding: 30px;
   text-align: center;
+  position: relative;
+  z-index: 10;
 `
 
 const Title = styled.div`

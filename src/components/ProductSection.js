@@ -74,7 +74,7 @@ const PanelText = styled.div`
   width: 100%;
 `
 const ProductSection = ({ title, logo, subtitle, body, panels }) => (
-  <Wrapper>
+  <Wrapper id="marketplaces">
     <PaddedContainer>
       <Ribbon color="#388d6c" left="-450px" top />
       <Content>

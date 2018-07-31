@@ -25,6 +25,11 @@ const PaddedColumns = styled(Columns)`
   position: relative;
 `
 
+const TextColumn = styled(Column)`
+  position: relative;
+  z-index: 10;
+`
+
 const ImageColumn = styled(Column)`
   position: relative;
   text-align: center;
@@ -42,10 +47,10 @@ const ProductSection = ({ title, body, logo, panels }) => (
     <PaddedContainer>
       <Content>
         <PaddedColumns>
-          <Column>
+          <TextColumn>
             <Title>{title}</Title>
             <p>{body}</p>
-          </Column>
+          </TextColumn>
           <ImageColumn>
             <StyledRibbon color="#f7a825" left="300px" top inverse />
             <Logo src={logo} />

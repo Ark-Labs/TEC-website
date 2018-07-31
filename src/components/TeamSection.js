@@ -43,7 +43,7 @@ const TeamMembers = styled(Columns)`
 `
 
 const TeamSection = ({ title, members }) => (
-  <Wrapper>
+  <Wrapper id="team">
     <PaddedContainer>
       <Ribbon color="#e52839" left="-600px" top />
       <Content>

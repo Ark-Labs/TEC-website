@@ -40,7 +40,7 @@ const Image = styled.img`
 `
 
 const DPoSSection = ({ title, body, backgroundImage, button }) => (
-  <Wrapper>
+  <Wrapper id="blockchain">
     <PaddedContainer>
       <Content>
         <Columns>

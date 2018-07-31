@@ -32,7 +32,7 @@ const Ribbon = styled.div`
   height: 1px;
   width: 600px;
   transform: skewX(${props =>
-    props.inverse ? '-55deg' : '55deg'}) scale3d(1, 9999, 1);
+    props.inverse ? '-55deg' : '55deg'}) scale3d(1, 4000, 1);
 }
 `
 

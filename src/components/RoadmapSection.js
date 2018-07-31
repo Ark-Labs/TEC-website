@@ -42,7 +42,7 @@ const RoadmapSection = ({ title, progress, events }) => {
   const bottomEvents = filter(events, (event, index) => index % 2 === 1)
 
   return (
-    <Wrapper>
+    <Wrapper id="roadmap">
       <PaddedContainer>
         <Content>
           <Title>{title}</Title>
