@@ -48,6 +48,7 @@ const Legend = styled(Column)`
 
 const Bullet = styled.span`
   color: white;
+  white-space: nowrap;
 `
 
 const Labels = styled(Columns)`
@@ -93,7 +94,7 @@ const DistributionSection = ({ title, distribution, tranches }) => (
           <CenteredColumn>
             <PieChartWrapper>
               <PieChartTitle>Distribution</PieChartTitle>
-              <ResponsiveContainer width="100%" aspect={1}>
+              <ResponsiveContainer width="100%" aspect="1.2">
                 <PieChart>
                   <Pie
                     data={distribution}

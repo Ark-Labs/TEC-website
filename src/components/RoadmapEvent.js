@@ -4,6 +4,15 @@ import styled from 'styled-components'
 const Wrapper = styled.div`
   position: relative;
   min-height: 100px;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: ${props =>
+      props.direction === 'top' ? 'flex-end' : 'flex-start'};
+    text-align: ${props => (props.direction === 'top' ? 'right' : 'left')};
+    margin-bottom: 40px;
+  }
 `
 
 const Arrow = styled(({ active, ...props }) => (
@@ -24,6 +33,11 @@ const Arrow = styled(({ active, ...props }) => (
   transform: rotate(
     ${props => (props.direction === 'top' ? '90deg' : '-90deg')}
   );
+  @media (max-width: 768px) {
+    transform: rotate(
+      ${props => (props.direction === 'top' ? '-90deg' : '90deg')}
+    );
+  }
 `
 
 const LeftColumn = styled.div`
@@ -38,6 +52,17 @@ const LeftColumn = styled.div`
   margin-top: 50px;
   flex-direction: ${props =>
     props.direction === 'top' ? 'row' : 'row-reverse'};
+
+  @media (max-width: 768px) {
+    transform: none;
+    position: relative;
+    top: unset;
+    right: unset;
+    flex-direction: ${props =>
+      props.direction === 'top' ? 'row-reverse' : 'row'};
+    margin-left: -30px;
+    margin-top: 0;
+  }
 `
 
 const Date = styled.div`
@@ -46,6 +71,7 @@ const Date = styled.div`
   line-height: 30px;
   font-weight: 500;
   margin: 0 5px;
+  white-space: nowrap;
 `
 
 const Text = styled.p`
@@ -54,7 +80,7 @@ const Text = styled.p`
 `
 
 const Event = ({ date, text, direction }) => (
-  <Wrapper>
+  <Wrapper direction={direction}>
     <LeftColumn direction={direction}>
       <Arrow direction={direction} />
       <Date>{date}</Date>
