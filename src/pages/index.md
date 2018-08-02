@@ -8,7 +8,7 @@ joinUs:
     children: Join us now
     color: '#333'
     href: '#team'
-  title: Join us as we build a better maker space on the blockchain !!!
+  title: Join us as we build a better maker space on the blockchain
 economy:
   backgroundImage: /img/repairing-economy-background.png
   button:
@@ -82,6 +82,7 @@ product:
     - image: /img/company-3.png
       text: build...
       url: '#test'
+  subtitle: "Accepted In Brick & Mortar Maker Spaces"
   title: The Nations Leading Marketplace
 perks:
   columns:
@@ -218,7 +219,7 @@ team:
   members:
     - description: CEO - Founder MAKERS ARK
       image: /img/team-0.jpg
-      name: Mike Doty 222
+      name: Mike Doty
     - description: CEO - Founder MAKERS ARK
       image: /img/team-0.jpg
       name: Mike Doty 2
@@ -264,4 +265,3 @@ contact:
   title: Contact Us
 copyright: © 2018  Copyrights are Creative Commons
 ---
-

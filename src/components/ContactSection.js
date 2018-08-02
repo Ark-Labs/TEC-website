@@ -27,8 +27,11 @@ const TextField = styled.input`
   border: 1px solid #9b9b9b;
   background-color: #eeeeee;
   border: solid 1px #3d3d3d;
-  color: #b2bac4;
+  color: black;
   margin-bottom: 16px;
+  &:placeholder {
+    color: #b2bac4;
+  }
 `
 
 const TextArea = TextField.withComponent('textarea').extend``

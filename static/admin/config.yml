@@ -82,7 +82,7 @@ collections:
             widget: "object"
             fields:
               - <<: *title
-              - {label: "Secondary Title", name: "productSubtitle", widget: "string"}
+              - {label: "Secondary Title", name: "subtitle", widget: "string"}
               - {label: "Logo", name: "logo", widget: "image"}
               - <<: *body
               - label: "Panels"

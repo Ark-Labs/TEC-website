@@ -86,8 +86,8 @@ export const HomepageQuery = graphql`
         }
         product {
           title
-          logo
           subtitle
+          logo
           body
           panels {
             image
