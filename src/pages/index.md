@@ -245,11 +245,17 @@ team:
 partners:
   partners:
     - image: /img/ark-labs.svg
+      href: "/"
     - image: /img/ark-labs.svg
+      href: "/"
     - image: /img/ark-labs.svg
+      href: "/"
     - image: /img/ark-labs.svg
+      href: "/"
     - image: /img/ark-labs.svg
+      href: "/"
     - image: /img/ark-labs.svg
+      href: "/"
   title: Partners
 contact:
   address: '231 North Star  34th Street, Suite #100 Cupertino, 98103'
@@ -265,4 +271,3 @@ contact:
   title: Contact Us
 copyright: © 2018  Copyrights are Creative Commons
 ---
-
