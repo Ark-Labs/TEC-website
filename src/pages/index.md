@@ -218,7 +218,7 @@ team:
   members:
     - description: CEO - Founder MAKERS ARK
       image: /img/team-0.jpg
-      name: Mike Doty
+      name: Mike Doty 222
     - description: CEO - Founder MAKERS ARK
       image: /img/team-0.jpg
       name: Mike Doty 2
