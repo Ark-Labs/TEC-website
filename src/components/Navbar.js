@@ -100,7 +100,7 @@ class Navbar extends React.Component {
               <NavbarLink to="#roadmap">Roadmap</NavbarLink>
               <NavbarLink to="#team">Team</NavbarLink>
               <NavbarLink to="#contact">Contact</NavbarLink>
-              <NavbarLink to="/en/login">Login/SignUp</NavbarLink>
+              <NavbarLink to="/en/login">Login / Signup</NavbarLink>
             </Menu>
           </Nav>
         </Container>

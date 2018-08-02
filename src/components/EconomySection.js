@@ -61,7 +61,7 @@ const EconomySection = ({
           ))}
         </PaddedColumns>
         <p>{lowerText}</p>
-        <StyledButton {...button} />
+        <StyledButton {...button} download />
       </ContentWithBackground>
     </PaddedContainer>
   </Wrapper>

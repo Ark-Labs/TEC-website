@@ -29,9 +29,11 @@ const PartnersSection = ({ title, partners }) => (
       <Content>
         <Title>{title}</Title>
         <Columns isMultiline>
-          {partners.map(({ image }) => (
+          {partners.map(({ image, href }) => (
             <Partner isSize="1/3" key={image}>
-              <Image src={image} />
+              <a href={href}>
+                <Image src={image} />
+              </a>
             </Partner>
           ))}
         </Columns>

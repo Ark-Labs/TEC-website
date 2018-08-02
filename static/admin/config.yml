@@ -64,7 +64,14 @@ collections:
                   - <<: *title
                   - <<: *body
               - {label: "Lower Text", name: "lowerText", widget: "text"}
-              - <<: *button
+              - label: "Whitepaper Button"
+                name: "button"
+                widget: "object"
+                fields:
+                  - {label: "Text", name: "children", widget: "string"}
+                  - {label: "File", name: "href", widget: "file"}
+                  - {label: "Background Color", name: "background", widget: "color"}
+                  - {label: "Text Color", name: "color", widget: "color"}
           - label: "FAQ"
             name: "faq"
             widget: "object"
@@ -183,6 +190,7 @@ collections:
                 widget: "list"
                 field:
                   - {label: Image, name: image, widget: image}
+                  - {label: URL, name: href, widget: string}
           - label: "Contact"
             name: "contact"
             widget: "object"

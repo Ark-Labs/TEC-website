@@ -159,6 +159,7 @@ export const HomepageQuery = graphql`
           title
           partners {
             image
+            href
           }
         }
         contact {
