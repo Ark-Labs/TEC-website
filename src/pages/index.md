@@ -15,7 +15,7 @@ economy:
     background: '#d6e600'
     children: Download WhitePaper
     color: '#333'
-    href: ''
+    href: /img/favicon.ico
   columns:
     - body: >-
         50,000 manufacturing factories have closed due to trade deals in the
@@ -245,17 +245,11 @@ team:
 partners:
   partners:
     - image: /img/ark-labs.svg
-      href: '/'
     - image: /img/ark-labs.svg
-      href: '/'
     - image: /img/ark-labs.svg
-      href: '/'
     - image: /img/ark-labs.svg
-      href: '/'
     - image: /img/ark-labs.svg
-      href: '/'
     - image: /img/ark-labs.svg
-      href: '/'
   title: Partners
 contact:
   address: '231 North Star  34th Street, Suite #100 Cupertino, 98103'
@@ -271,3 +265,4 @@ contact:
   title: Contact Us
 copyright: © 2018  Copyrights are Creative Commons
 ---
+
