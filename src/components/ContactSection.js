@@ -107,13 +107,13 @@ const ContactSection = ({ title, address, socialLinks }) => (
         >
           <input type="hidden" name="form-name" value="contact" />
 
-          <Label for="email">Mail</Label>
+          <Label htmlFor="email">Mail</Label>
           <TextField
             name="email"
             type="email"
             placeholder="Your email address"
           />
-          <Label for="body">Message</Label>
+          <Label htmlFor="body">Message</Label>
           <TextArea rows="5" name="body" placeholder="Type here" />
 
           <SubmitButton color="#ff4f4f" type="submit">
