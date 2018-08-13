@@ -30,6 +30,12 @@ const PieChartTitle = styled.div`
   font-size: 36px
   font-weight: bold;
   text-transform: uppercase;
+  @media (max-width: 1200px) {
+    font-size: 28px;
+  }
+  @media (max-width: 768px) {
+    font-size: 6vw;
+  }
 `
 
 const PieChartWrapper = styled.div`
@@ -44,6 +50,9 @@ const Legend = styled(Column)`
   font-size: 36px
   font-weight: bold;
   text-transform: uppercase;
+  @media (max-width: 768px) {
+    font-size: 6vw;
+  }
 `
 
 const Bullet = styled.span`
@@ -91,10 +100,12 @@ const DistributionSection = ({ title, distribution, tranches }) => (
       <Content>
         <Title>{title}</Title>
         <Columns>
-          <CenteredColumn>
+          <CenteredColumn
+            isSize={{ mobile: 'full', tablet: '1/3', desktop: '1/2' }}
+          >
             <PieChartWrapper>
               <PieChartTitle>Distribution</PieChartTitle>
-              <ResponsiveContainer width="100%" aspect="1.2">
+              <ResponsiveContainer width="100%" aspect={1.2}>
                 <PieChart>
                   <Pie
                     data={distribution}
@@ -125,7 +136,9 @@ const DistributionSection = ({ title, distribution, tranches }) => (
               ))}
             </Labels>
           </CenteredColumn>
-          <CenteredColumn>
+          <CenteredColumn
+            isSize={{ mobile: 'full', tablet: '2/3', desktop: '1/2' }}
+          >
             {tranches.map(({ name, value }) => (
               <Tranch key={name}>
                 <Progress>

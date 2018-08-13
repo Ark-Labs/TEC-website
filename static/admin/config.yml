@@ -78,6 +78,7 @@ collections:
             fields:
               - <<: *title
               - <<: *backgroundImage
+              - {label: "Expand Icon", name: "expandIcon", widget: "image"}
               - label: "Questions"
                 name: "questions"
                 widget: "list"

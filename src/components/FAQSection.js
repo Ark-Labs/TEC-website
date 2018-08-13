@@ -26,7 +26,7 @@ class FAQSection extends Component {
   }
 
   render() {
-    const { title, backgroundImage, questions } = this.props
+    const { title, backgroundImage, questions, expandIcon } = this.props
     return (
       <Wrapper>
         <PaddedContainer>
@@ -36,6 +36,7 @@ class FAQSection extends Component {
               <FAQQuestion
                 {...question}
                 key={index}
+                expandIcon={expandIcon}
                 active={this.state.activeQuestion === index}
                 onClick={() => this.setState({ activeQuestion: index })}
               />

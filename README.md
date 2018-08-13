@@ -1,7 +1,6 @@
-# Gatsby + Netlify CMS
+# Ark Labs Landing Page
 
 This repo contains an application that is built with [Gatsby](https://www.gatsbyjs.org/), and [Netlify CMS](https://www.netlifycms.org): **[Demo Link](https://gatsby-netlify-cms.netlify.com/)**.
-
 It follows the [JAMstack architecture](https://jamstack.org) by using Git as a single source of truth, and [Netlify](https://www.netlify.com) for continuous deployment, and CDN distribution.
 
 ## Prerequisites
@@ -18,14 +17,24 @@ Netlify CMS can run in any frontend web environment, but the quickest way to try
 After clicking that button, you’ll authenticate with GitHub and choose a repository name. Netlify will then automatically create a repository in your GitHub account with a copy of the files from the template. Next, it will build and deploy the new site on Netlify, bringing you to the site dashboard when the build is complete. Next, you’ll need to set up Netlify’s Identity service to authorize users to log in to the CMS.
 
 ### Access Locally
+
 ```
-$ git clone https://github.com/Ark-Labs/TEC-website.git
+$ git clone https://github.com/vRobM/Ark-Labs-TEC-website.git
 $ cd TEC-website
 $ yarn
-$ npm run develop
+$ yarn start
 ```
+
 To test the CMS locally, you'll need run a production build of the site:
+
 ```
-$ npm run build
-$ npm run serve
+$ yarn build
+$ yarn serve
 ```
+
+### Deployment
+
+- Fork this repository on GitHub
+- Create a new Netlify account
+- Once logged in, add a new application using [this link](https://app.netlify.com/start) and default settings
+- Once set up, go to Netlify application dashboard

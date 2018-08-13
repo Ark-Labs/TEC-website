@@ -1,11 +1,14 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import styled from 'styled-components'
 import { Container } from 'bloomer'
 
 const Wrapper = styled.div`
   background: black;
-  position: relative;
+  position: fixed;
+  top: ${props => (props.visible ? 0 : -128)}px;
+  transition: top 0.15s linear;
+  left: 0;
+  width: 100%;
   z-index: 2;
 `
 
@@ -60,7 +63,7 @@ const Hamburger = styled(props => (
   }
 `
 
-const NavbarLink = styled(Link)`
+const NavbarLink = styled.a`
   color: white;
   text-decoration: none;
   padding: 24px;
@@ -84,23 +87,40 @@ class Navbar extends React.Component {
     this.setState({ open: !this.state.open })
   }
 
+  onScroll = () => {
+    let currentScrollPosition = window.pageYOffset
+
+    if (this.prevScrollPosition > currentScrollPosition)
+      this.setState({ visible: true })
+    else this.setState({ visible: false })
+
+    this.prevScrollPosition = currentScrollPosition
+  }
+
+  componentDidMount() {
+    this.prevScrollPosition = window.pageYOffset
+    window.onscroll = this.onScroll
+  }
+
   render() {
     return (
-      <Wrapper>
+      <Wrapper visible={this.state.visible}>
         <Container>
           <Nav>
             <Logo src={this.props.logo} />
             <Hamburger onClick={this.toggle} />
             <Menu open={this.state.open}>
-              <NavbarLink to="#about">About</NavbarLink>
-              <NavbarLink to="#marketplaces">
+              <NavbarLink href="#about">About</NavbarLink>
+              <NavbarLink href="#marketplaces">
                 Marketplaces / Ark Labs
               </NavbarLink>
-              <NavbarLink to="#blockchain">Blockchain</NavbarLink>
-              <NavbarLink to="#roadmap">Roadmap</NavbarLink>
-              <NavbarLink to="#team">Team</NavbarLink>
-              <NavbarLink to="#contact">Contact</NavbarLink>
-              <NavbarLink to="/en/login">Login / Signup</NavbarLink>
+              <NavbarLink href="#blockchain">Blockchain</NavbarLink>
+              <NavbarLink href="#roadmap">Roadmap</NavbarLink>
+              <NavbarLink href="#team">Team</NavbarLink>
+              <NavbarLink href="#contact">Contact</NavbarLink>
+              <NavbarLink href="https://tshop.arklabs.us/en/login">
+                Login / Signup
+              </NavbarLink>
             </Menu>
           </Nav>
         </Container>

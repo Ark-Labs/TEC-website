@@ -51,6 +51,7 @@ export const HomepageQuery = graphql`
         logo
         copyright
         joinUs {
+          logo
           backgroundImage
           title
           button {
@@ -79,6 +80,7 @@ export const HomepageQuery = graphql`
         faq {
           title
           backgroundImage
+          expandIcon
           questions {
             question
             answer

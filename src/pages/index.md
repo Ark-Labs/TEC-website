@@ -2,6 +2,7 @@
 templateKey: homepage
 logo: /img/logo.svg
 joinUs:
+  logo: /img/logo.svg
   backgroundImage: /img/join-us-background.png
   button:
     background: '#d6e600'
@@ -46,6 +47,7 @@ economy:
     today. Below are a few industry facts & figures.
 faq:
   backgroundImage: /img/faq-background.png
+  expandIcon: /img/faq-expand.svg
   questions:
     - answer: >-
         You can take part by registering on the website when the presale period
