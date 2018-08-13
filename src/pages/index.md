@@ -182,20 +182,28 @@ roadmap:
   events:
     - date: 24 Oct 2017
       text: Presale Start Bonus 5%
+      past: true
     - date: 25 Oct 2017
       text: Presale Start Bonus 15%
+      past: true
     - date: 26 Oct 2017
       text: Presale Start Bonus 25%
+      past: true
     - date: 29 Oct 2017
       text: Presale Start Bonus 35%
+      past: false
     - date: 24 Oct 2018
       text: Presale Start Bonus 45%
+      past: false
     - date: 25 Oct 2018
       text: Presale Start Bonus 55%
+      past: false
     - date: 26 Oct 2018
       text: Presale Start Bonus 65%
+      past: false
     - date: 29 Oct 2018
       text: Presale Start Bonus 75%
+      past: false
   title: Roadmap
 distribution:
   distribution:

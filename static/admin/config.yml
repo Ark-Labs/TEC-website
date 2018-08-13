@@ -150,6 +150,7 @@ collections:
                 fields:
                   - {label: "Date", name: "date", widget: "date", format: "DD MMM YYYY"}
                   - {label: "Text", name: "text", widget: "text"}
+                  - {label: "Is in past?", name: "past", widget: "boolean"}
           - label: "Distribution"
             name: "distribution"
             widget: "object"

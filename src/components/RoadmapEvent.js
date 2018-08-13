@@ -15,7 +15,7 @@ const Wrapper = styled.div`
   }
 `
 
-const Arrow = styled(({ active, ...props }) => (
+const Arrow = styled(({ past, ...props }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="25"
@@ -24,7 +24,7 @@ const Arrow = styled(({ active, ...props }) => (
     {...props}
   >
     <path
-      fill={active ? '#F7A825' : 'white'}
+      fill={past ? '#F7A825' : 'white'}
       fillRule="nonzero"
       d="M12.5 0L25 12H0z"
     />
@@ -79,10 +79,10 @@ const Text = styled.p`
   max-width: 150px;
 `
 
-const Event = ({ date, text, direction }) => (
+const Event = ({ date, text, direction, past }) => (
   <Wrapper direction={direction}>
     <LeftColumn direction={direction}>
-      <Arrow direction={direction} />
+      <Arrow direction={direction} past={past} />
       <Date>{date}</Date>
     </LeftColumn>
     <Text>{text}</Text>

@@ -26,15 +26,29 @@ const Roadmap = styled.div`
 `
 
 const Line = styled.div`
+  position: relative;
   height: 10px;
   width: 100%;
   background: white;
   border-radius: 10px;
+  overflow: hidden;
   @media (max-width: 768px) {
     width: 10px;
     height: 100%;
     position: absolute;
     margin: 0 5px;
+  }
+
+  &:after {
+    position: absolute;
+    content: '';
+    background: ${props => props.color || '#e52839'};
+    width: ${props => `${props.progress}%`};
+    height: 100%;
+    @media (max-width: 768px) {
+      height: ${props => `${props.progress}%`};
+      width: 100%;
+    }
   }
 `
 
@@ -60,9 +74,10 @@ const BottomEvents = styled(Columns)`
   }
 `
 
-const RoadmapSection = ({ title, progress, events }) => {
+const RoadmapSection = ({ title, events }) => {
   const topEvents = filter(events, (event, index) => index % 2 === 0)
   const bottomEvents = filter(events, (event, index) => index % 2 === 1)
+  const progress = (filter(events, 'past').length * 62) / events.length
 
   return (
     <Wrapper id="roadmap">

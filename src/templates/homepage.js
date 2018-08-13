@@ -133,6 +133,7 @@ export const HomepageQuery = graphql`
           events {
             date
             text
+            past
           }
         }
         distribution {
