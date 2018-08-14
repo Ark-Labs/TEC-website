@@ -80,7 +80,7 @@ const NavbarLink = styled.a`
 class Navbar extends React.Component {
   constructor() {
     super()
-    this.state = { open: false }
+    this.state = { open: false, visible: true }
   }
 
   toggle = () => {
