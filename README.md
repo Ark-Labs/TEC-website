@@ -3,20 +3,30 @@
 This repo contains an application that is built with [Gatsby](https://www.gatsbyjs.org/), and [Netlify CMS](https://www.netlifycms.org): **[Demo Link](https://gatsby-netlify-cms.netlify.com/)**.
 It follows the [JAMstack architecture](https://jamstack.org) by using Git as a single source of truth, and [Netlify](https://www.netlify.com) for continuous deployment, and CDN distribution.
 
-## Prerequisites
+## Setup
 
-- Node (I recommend using v8.2.0 or higher)
-- [Gatsby CLI](https://www.gatsbyjs.org/docs/)
+### Create an app
 
-## Getting Started (Recommended)
+- Fork this repository on GitHub
+- Create a new Netlify account
+- Once logged in, add a new application using [this link](https://app.netlify.com/start) where you will authorize GitHub access and select repository you've just created
 
-Netlify CMS can run in any frontend web environment, but the quickest way to try it out is by running it on a pre-configured starter site with Netlify. The example here is the Kaldi coffee company template (adapted from [One Click Hugo CMS](https://github.com/netlify-templates/one-click-hugo-cms)). Use the button below to build and deploy your own copy of the repository:
+### Enable Identity and Git Gateway
 
-<a href="https://app.netlify.com/start/deploy?repository=https://github.com/AustinGreen/gatsby-starter-netlify-cms&amp;stack=cms"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
+Netlify's Identity and Git Gateway services allow you to manage CMS admin users for your site without requiring them to have an account with your Git host or commit access on your repo. From your site dashboard on Netlify:
 
-After clicking that button, you’ll authenticate with GitHub and choose a repository name. Netlify will then automatically create a repository in your GitHub account with a copy of the files from the template. Next, it will build and deploy the new site on Netlify, bringing you to the site dashboard when the build is complete. Next, you’ll need to set up Netlify’s Identity service to authorize users to log in to the CMS.
+- Go to Settings > Identity, and select Enable Identity service.
+- Under Registration preferences, select Open or Invite only. In most cases, you'll want only invited users to access your CMS, but if you're just experimenting, you can leave it open for convenience.
+- If you'd like to allow one-click login with services like Google and GitHub, check the boxes next to the services you'd like to use, under External providers.
+- Scroll down to Services > Git Gateway, and click Enable Git Gateway. This will authenticate with your Git host and generate an API access token. In this case, we're leaving the Roles field blank, which means any logged in user may access the CMS. For information on changing this, check the Netlify Identity documentation.
 
-### Access Locally
+### deploy
+
+Last step is to rebuild your application to make sure that git gateway settings from previous step is working correctly. In order to do that, simply go to "Deploys" section in Netlify dashboard, and click "Trigger deploy" button.
+
+Now, you can access CMS panel by browsing to `/admin` path inside your deployed application.
+
+## Access Locally
 
 ```
 $ git clone https://github.com/vRobM/Ark-Labs-TEC-website.git
@@ -31,10 +41,3 @@ To test the CMS locally, you'll need run a production build of the site:
 $ yarn build
 $ yarn serve
 ```
-
-### Deployment
-
-- Fork this repository on GitHub
-- Create a new Netlify account
-- Once logged in, add a new application using [this link](https://app.netlify.com/start) and default settings
-- Once set up, go to Netlify application dashboard

@@ -16,7 +16,8 @@ const PaddedContainer = styled(Container)`
 
 const Logo = styled.img`
   @media (max-width: 768px) {
-    display: none;
+    display: block;
+    margin: 0 auto;
   }
 `
 
