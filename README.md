@@ -36,9 +36,17 @@ Your site shold be live on Netlify.
 
 Top menu > Identity, click on the Invite users button. Add emails of admin user(s) to invite them to your new Netlify Site. Click Send.
 
-Find the email titled: "You've been invited to join <site>-xxxxx.netlify.com" and accept the invite by clicking on the "Accept the invite" link. This should take you to the new site and ask you to set a password. Once set, you will be logged in and see the admin panel. Next, you will have to click on the "Homepage" link that doesn't look like a link to get to the "Content manager" where you can edit your new site to your liking.
+Find the email titled: "You've been invited to join <site>-xxxxx.netlify.com" and accept the invite by clicking on the "Accept the invite" link. 
+  
+This should take you to the new site and ask you to set a password. Once set, you will be logged in and see the admin panel. 
+
+Next, you will have to click on the "Homepage" link that doesn't look like a link to get to the "Content manager" where you can edit your new site to your liking.
 
 Later, you can always access the CMS admin panel by browsing to the `https://<site>/admin` path for your deployed application.
+
+### 5. Site settings
+
+Next, it's a good idea to change the site name to something familiar. Go to the top menu > Settings and under Site details click the "Change site name" button.
 
 ## Optional: Develop Locally
 
