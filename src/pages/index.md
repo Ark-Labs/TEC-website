@@ -2,13 +2,13 @@
 templateKey: homepage
 logo: /img/logo.svg
 joinUs:
-  logo: /img/logo.svg
   backgroundImage: /img/join-us-background.png
   button:
     background: '#d6e600'
     children: Join us now
     color: '#333'
-    href: '#team'
+    href: 'https://tshop.arklabs.us/en/login'
+  logo: /img/logo.svg
   title: Join us as we build a better maker space on the blockchain
 economy:
   backgroundImage: /img/repairing-economy-background.png
@@ -183,29 +183,29 @@ newsletter:
 roadmap:
   events:
     - date: 24 Oct 2017
+      past: true
       text: Presale Start Bonus 5%
-      past: true
     - date: 25 Oct 2017
+      past: true
       text: Presale Start Bonus 15%
-      past: true
     - date: 26 Oct 2017
-      text: Presale Start Bonus 25%
       past: true
+      text: Presale Start Bonus 25%
     - date: 29 Oct 2017
+      past: false
       text: Presale Start Bonus 35%
-      past: false
     - date: 24 Oct 2018
+      past: false
       text: Presale Start Bonus 45%
-      past: false
     - date: 25 Oct 2018
+      past: false
       text: Presale Start Bonus 55%
-      past: false
     - date: 26 Oct 2018
+      past: false
       text: Presale Start Bonus 65%
-      past: false
     - date: 29 Oct 2018
-      text: Presale Start Bonus 75%
       past: false
+      text: Presale Start Bonus 75%
   title: Roadmap
 distribution:
   distribution:
@@ -254,18 +254,18 @@ team:
   title: Our Team
 partners:
   partners:
-    - image: /img/ark-labs.svg
-      href: "/"
-    - image: /img/ark-labs.svg
-      href: "/"
-    - image: /img/ark-labs.svg
-      href: "/"
-    - image: /img/ark-labs.svg
-      href: "/"
-    - image: /img/ark-labs.svg
-      href: "/"
-    - image: /img/ark-labs.svg
-      href: "/"
+    - href: /
+      image: /img/ark-labs.svg
+    - href: /
+      image: /img/ark-labs.svg
+    - href: /
+      image: /img/ark-labs.svg
+    - href: /
+      image: /img/ark-labs.svg
+    - href: /
+      image: /img/ark-labs.svg
+    - href: /
+      image: /img/ark-labs.svg
   title: Partners
 contact:
   address: '231 North Star  34th Street, Suite #100 Cupertino, 98103'
@@ -281,3 +281,4 @@ contact:
   title: Contact Us
 copyright: © 2018  Copyrights are Creative Commons
 ---
+
