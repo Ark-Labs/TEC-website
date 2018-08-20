@@ -11,7 +11,7 @@ It follows the [JAMstack architecture](https://jamstack.org) by using Git as a s
 
 ### 1. Create an app
 
-- Fork this repository on GitHub
+- [Fork](https://github.com/Ark-Labs/TEC-website/fork) this repository on GitHub
 - Create a new [Netlify](https://app.netlify.com/signup) account
 - Once logged in, add a new application using [this link](https://app.netlify.com/start) where you will authorize GitHub access and select repository you've just created
 
