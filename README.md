@@ -9,13 +9,13 @@ It follows the [JAMstack architecture](https://jamstack.org) by using Git as a s
 
 ## Setup
 
-### Create an app
+### 1. Create an app
 
 - Fork this repository on GitHub
 - Create a new Netlify account
 - Once logged in, add a new application using [this link](https://app.netlify.com/start) where you will authorize GitHub access and select repository you've just created
 
-### Enable Identity and Git Gateway
+### 2. Enable Identity and Git Gateway
 
 Netlify's Identity and Git Gateway services allow you to manage CMS users for your site without requiring them to have an account with your Git host or commit access on your repo. All from your site dashboard on Netlify:
 
@@ -24,13 +24,13 @@ Netlify's Identity and Git Gateway services allow you to manage CMS users for yo
 - If you'd like to allow one-click login with services like Google and GitHub, check the boxes next to the services you'd like to use, under External providers.
 - Scroll down to Services > Git Gateway, and click Enable Git Gateway. This will authenticate with your Git host and generate an API access token. In this case, we're leaving the Roles field blank, which means any logged in user may access the CMS. For information on changing this, check the Netlify Identity documentation.
 
-### Deploy
+### 3. Deploy
 
 Last step is to rebuild your application to make sure that the git gateway settings from the previous step is working correctly. In order to do that, simply go to the "Deploys" section in the Netlify dashboard, and click the "Trigger deploy" button.
 
 Now, you can access the CMS panel by browsing to the `/admin` path inside your deployed application.
 
-## Clone Locally
+## Optional: Develop Locally
 
 ```
 $ git clone https://github.com/vRobM/Ark-Labs-TEC-website.git
